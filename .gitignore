@@ -32,9 +32,9 @@ coverage.xml
 .idea/
 .vscode/
 *.log
-name_index.csv
-bom_name_resolution_report.csv
-bom_by_name.csv
-bom_by_name_candidates.csv
-skipped_names.log
+data/name_index.csv
+data/bom_name_resolution_report.csv
+data/bom_by_name.csv
+data/bom_by_name_candidates.csv
+data/skipped_names.log
 load_data.sh

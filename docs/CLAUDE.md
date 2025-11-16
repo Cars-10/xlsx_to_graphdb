@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This repository is a Windchill demo data importer that extracts Bill of Materials (BOM) data from Excel spreadsheets and loads it into a GraphDB RDF triple store. The primary data source is `Snowmobile.xlsx`, which contains multiple tabs representing different part types and relationships.
+This repository is a spreadsheet-to-GraphDB importer that extracts Bill of Materials (BOM) data from Excel spreadsheets and loads it into a GraphDB RDF triple store. Example data sources include `Snowmobile.xlsx`, `Helicopter.xlsx`, and `Mower.xlsx`, which contain multiple tabs representing different part types and relationships.
 
 ## Core Workflow
 
@@ -16,7 +16,7 @@ The system follows a three-stage data transformation pipeline:
 
 ## Key Components
 
-### Main Importer (`snowmobile_importer.py`)
+### Main Importer (`src/spreadsheet_loader.py`)
 
 The primary script with two main classes:
 
@@ -48,7 +48,7 @@ The primary script with two main classes:
 
 ## Excel Structure
 
-The `Snowmobile.xlsx` workbook contains these sheets:
+Example workbooks (in `data/`) contain these sheets:
 - `MechanicalPart-Sheet`
 - `Variant-Sheet`
 - `WTPart-Sheet`
@@ -66,12 +66,12 @@ The parser automatically normalizes headers by detecting when the first data row
 
 ## BOM CSV Formats
 
-### Number-based BOM (`bom.csv`)
+### Number-based BOM (`data/bom.csv`)
 Contains these column pairs (auto-detected):
 - `Number` + `Component Id`, OR
 - `Parent Number` + `Child Number`
 
-### Name-based BOM (`bom_by_name.csv`)
+### Name-based BOM (`data/bom_by_name.csv`)
 Contains these column pairs (auto-detected):
 - `Parent Name` + `Child Name`, OR
 - `Name` + `Component Name`
@@ -87,46 +87,46 @@ pip install pandas openpyxl rdflib
 
 ### Basic Import (Number-based)
 ```bash
-python snowmobile_importer.py \
-  --excel Snowmobile.xlsx \
-  --bom bom.csv \
+python src/spreadsheet_loader.py \
+  --excel data/Snowmobile.xlsx \
+  --bom data/bom.csv \
   --url http://127.0.0.1:7200 \
   --repo Snowmobile
 ```
 
 ### Name-based Import with Full Diagnostics
 ```bash
-./load_by_name.sh
+scripts/load_by_name.sh
 ```
 
 This script automatically:
-- Generates `bom_by_name.csv` from `bom.csv` if needed
+- Generates `data/bom_by_name.csv` from `data/bom.csv` if needed
 - Enables debug output (`--debug-names`)
-- Creates resolution report (`bom_name_resolution_report.csv`)
-- Dumps name index (`name_index.csv`)
-- Logs skipped entries (`skipped_names.log`)
+- Creates resolution report (`data/bom_name_resolution_report.csv`)
+- Dumps name index (`data/name_index.csv`)
+- Logs skipped entries (`data/skipped_names.log`)
 
 ### Manual Name-based BOM Generation
 ```bash
-python snowmobile_importer.py \
-  --excel Snowmobile.xlsx \
-  --bom bom.csv \
+python src/spreadsheet_loader.py \
+  --excel data/Snowmobile.xlsx \
+  --bom data/bom.csv \
   --generate-bom-by-name \
-  --out-bom-name bom_by_name.csv
+  --out-bom-name data/bom_by_name.csv
 ```
 
 ### Dump Name Index (for debugging)
 ```bash
-python snowmobile_importer.py \
-  --excel Snowmobile.xlsx \
-  --dump-name-index name_index.csv
+python src/spreadsheet_loader.py \
+  --excel data/Snowmobile.xlsx \
+  --dump-name-index data/name_index.csv
 ```
 
 ### Dry Run (test without importing)
 ```bash
-python snowmobile_importer.py \
-  --excel Snowmobile.xlsx \
-  --bom bom.csv \
+python src/spreadsheet_loader.py \
+  --excel data/Snowmobile.xlsx \
+  --bom data/bom.csv \
   --dry-run
 ```
 
@@ -142,10 +142,10 @@ python snowmobile_importer.py \
 - `--batch-size N`: Control triples per POST (default 1000)
 - `--sheets SHEET1 SHEET2`: Restrict parsing to specific sheets
 
-## Environment Variables (for load_by_name.sh)
+## Environment Variables (for scripts/load_by_name.sh)
 
-- `EXCEL_PATH`: Path to Excel file (default: `Snowmobile.xlsx`)
-- `BOM_PATH`: Path to BOM CSV (default: `bom_by_name.csv`)
+- `EXCEL_PATH`: Path to Excel file (default: `data/Snowmobile.xlsx`)
+- `BOM_PATH`: Path to BOM CSV (default: `data/bom_by_name.csv`)
 - `GRAPHDB_URL`: GraphDB URL (default: `http://127.0.0.1:7200`)
 - `GRAPHDB_REPO`: Repository name (default: `Snowmobile`)
 - `GRAPHDB_USER`: Username for authentication
@@ -153,14 +153,16 @@ python snowmobile_importer.py \
 - `BATCH_SIZE`: Batch size override
 - `STRICT_NAMES`: Set to enable strict name resolution
 - `FORCE_GENERATE_BOM_BY_NAME`: Force regeneration of name-based BOM
-- `SKIP_LOG`: Path for skipped entries log (default: `skipped_names.log`)
+- `SKIP_LOG`: Path for skipped entries log (default: `data/skipped_names.log`)
 
-## Utility Scripts
+## Utility Scripts (in scripts/)
 
-- `read_excel.py`: Print all sheet names from Excel file
-- `read_sheet.py`: Export a specific sheet as CSV (skips first 4 rows)
-- `extract_parts.py`: Extract parts from specified sheets as JSON
-- `generate_load_script.py`: Generate bash script with curl commands (legacy approach)
+- `scripts/read_excel.py`: Print all sheet names from Excel file
+- `scripts/read_sheet.py`: Export a specific sheet as CSV (skips first 4 rows)
+- `scripts/extract_parts.py`: Extract parts from specified sheets as JSON
+- `scripts/generate_load_script.py`: Generate bash script with curl commands (legacy approach)
+- `scripts/visualize_graph.py`: Generate graph visualizations from GraphDB data
+- `scripts/convert_hierarchical_bom.py`: Convert hierarchical BOM formats
 
 ## Important Implementation Details
 
@@ -183,6 +185,33 @@ RDF triples are accumulated and posted in configurable batches to handle large d
 ## Troubleshooting
 
 - **Import fails with connection errors**: Verify GraphDB is running at the configured URL and the repository exists
-- **Name resolution has many skipped edges**: Check `skipped_names.log` and `bom_name_resolution_report.csv` to identify unknown or ambiguous names
+- **Name resolution has many skipped edges**: Check `data/skipped_names.log` and `data/bom_name_resolution_report.csv` to identify unknown or ambiguous names
 - **Missing parts in graph**: Ensure the sheet contains `Number` and `Name` columns; check logs for sheet parsing warnings
 - **Duplicate name warnings**: Use `--strict-names` to fail fast, or review the resolution report to understand which names are ambiguous
+
+## Directory Structure
+
+```
+.
+├── src/                          # Source code
+│   └── spreadsheet_loader.py    # Main importer module
+├── scripts/                      # Utility scripts
+│   ├── load_by_name.sh          # Automated import script
+│   ├── read_excel.py            # Excel inspection
+│   ├── read_sheet.py            # Sheet export
+│   ├── extract_parts.py         # Part extraction
+│   ├── generate_load_script.py  # Legacy script generator
+│   ├── visualize_graph.py       # Graph visualization
+│   └── convert_hierarchical_bom.py
+├── data/                         # Data files
+│   ├── *.xlsx                   # Excel workbooks
+│   ├── bom.csv                  # Number-based BOM
+│   ├── bom_by_name.csv          # Name-based BOM
+│   └── *.log, *.csv             # Generated reports
+├── docs/                         # Documentation
+│   ├── README.md
+│   ├── CLAUDE.md
+│   └── *.md                     # Other documentation
+└── tests/                        # Unit tests
+    └── test_spreadsheet_loader.py
+```

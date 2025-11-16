@@ -7,8 +7,8 @@ from unittest.mock import patch
 import pandas as pd
 import os
 import sys
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-import snowmobile_importer as smi
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(__file__)), 'src'))
+import spreadsheet_loader as smi
 
 
 class TestSpreadsheetParser(unittest.TestCase):
@@ -47,7 +47,7 @@ class FakeHTTPResponse:
 
 
 class TestGraphDBClient(unittest.TestCase):
-    @patch("snowmobile_importer.urlopen")
+    @patch("spreadsheet_loader.urlopen")
     def test_verify_connection(self, mock_urlopen):
         body = json.dumps([{ "id": "Snowmobile" }]).encode()
         mock_urlopen.return_value = FakeHTTPResponse(body)
