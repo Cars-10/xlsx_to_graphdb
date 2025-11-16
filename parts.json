@@ -1,0 +1,4692 @@
+{
+  "5435681-293": {
+    "name": "TOE-PLASTIC, SKI, INDY RED",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "1823917-2": {
+    "name": "SKAG-CARBIDE 4\" 60\u00b0 8MM STUD LATE",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "1823801_QT": {
+    "name": "SPINDLE LH Quality Check",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5136908-2": {
+    "name": "BUSHING-PLASTIC SKI METRIC SERIAL HIGH",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "BLUE243": {
+    "name": "Blue Threadlock",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "1823917-1": {
+    "name": "SKAG-CARBIDE 4\" 60\u00b0 8MM STUD EARLY",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "7566120": {
+    "name": "SKI KIT",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "buy"
+  },
+  "5435681-647": {
+    "name": "TOE-PLASTIC, SKI, ORANGE BURST",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5435681-689": {
+    "name": "TOE-PLASTIC, SKI, VELOCITY BLUE",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "7566110": {
+    "name": "TOE-PLASTIC KIT",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "buy"
+  },
+  "5414375-2": {
+    "name": "STOP-SKI RUBBER SOFT",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5435681-133": {
+    "name": "TOE-PLASTIC, SKI, BRIGHT WHITE",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5435681-630": {
+    "name": "TOE-PLASTIC, SKI, LIME SQUEEZE",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5136908-1": {
+    "name": "BUSHING-PLASTIC SKI METRIC SERIAL LOW",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "5414375-1": {
+    "name": "STOP-SKI RUBBER HARD",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "7566100": {
+    "name": "CARBIDE NUT KIT",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "buy"
+  },
+  "5435681-070": {
+    "name": "TOE-PLASTIC, SKI, BLACK",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "0000407": {
+    "name": "ENGINE CONTROL UNIT",
+    "type": "WCTYPE|wt.part.WTPart",
+    "source": "make"
+  },
+  "3514445": {
+    "name": "BEARING-6007",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262701_3": {
+    "name": "RESONATOR AXYS PART 3",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5264677": {
+    "name": "FOOTREST-RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438970": {
+    "name": "SADDLEBAG-RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824379_SW": {
+    "name": "ASM-LCA LH BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140766": {
+    "name": "MNT-MTN BAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136910": {
+    "name": "BUSHING-15.88X10.13X76",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555806": {
+    "name": "WASHER-FL .406X.812X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138292": {
+    "name": "BRACE-SUPPORT REAR LH MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439301": {
+    "name": "SKI-PLASTIC PRO STEER BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021543": {
+    "name": "ASM-FOOTREST SUPPORT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "8560171": {
+    "name": "LOCTITE - 263",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136745": {
+    "name": "SHAFT-IDLER M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_CENTER": {
+    "name": "Center Button",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023549": {
+    "name": "WELD-HAND HOLD,LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021325": {
+    "name": "WELD-SUSP PAD REAR 144 RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518953": {
+    "name": "SCR-M8X1.25X30 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2634156_PLATE2": {
+    "name": "ASM-HINGE,PLATE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635203": {
+    "name": "ASM-TIE ROD BOOT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7517786": {
+    "name": "BOLT M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543908": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1240300": {
+    "name": "CAP-PRESSURE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5437119": {
+    "name": "PLATE-TOP, SEAT BASE LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001027": {
+    "name": "Expansion Header",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5450456": {
+    "name": "CONSOLE-PROG BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5332798": {
+    "name": "TUBE-HITCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138262": {
+    "name": "MOUNT-LOWER FRONT MACH RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439575": {
+    "name": "MNT-AUX SHUT-OFF LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7510504": {
+    "name": "SCR-10-24X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5334285": {
+    "name": "SPACER-.520X.770X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4011402": {
+    "name": "PLUG-SWITCH,K1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139839": {
+    "name": "EXCHANGER-TUNNEL 144, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7621501": {
+    "name": "RIVET-FLAT HD-1/4 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "4016438_ICON_05": {
+    "name": "Icon, Playback",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338161": {
+    "name": "TUBE-UCA ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438972": {
+    "name": "LID-SADDLEBAG RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141020_XC": {
+    "name": "ARM-MACH 83_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260523-13": {
+    "name": "BRKT-SEAT MOUNT REAR - RED PC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136687": {
+    "name": "SHAFT-SPRING ROLLER M8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7043240": {
+    "name": "SPRING-TOR,",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7052674": {
+    "name": "PLUG-MAGNETIC,M14X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138261": {
+    "name": "MOUNT-LOWER FRONT MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137418": {
+    "name": "SHAFT-CROSS RMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_01": {
+    "name": "Icon, Check Engine",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-BB-0001033": {
+    "name": "Low-Power Dual 2-Input Positive-AND Gate",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7661401": {
+    "name": "PIN-1/8X1-COTTER-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001031": {
+    "name": "IC USB HS DUAL UART/FIFO 64-LQFP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7519972": {
+    "name": "SCR-HXFL-M8X1.25X85 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019140": {
+    "name": "FOOTREST-RH, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556386": {
+    "name": "WSHR-.275X.84X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024146_SW": {
+    "name": "TUNNEL 137 PROG BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7621472": {
+    "name": "RIVET3/16(.063-",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455203": {
+    "name": "BASE-SEAT MOLDED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824233": {
+    "name": "ASM-TIE ROD, WIDE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001039": {
+    "name": "USB_mini A/B",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "2521345_SW": {
+    "name": "FUEL PIPELINE 2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7519212": {
+    "name": "SCR-M8X1.25X65-HX/FL-Y,CL 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5336578": {
+    "name": "ROD-TIE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5434589": {
+    "name": "ROLLER-SPRING, TRI-ADJ, (LH SHOWN)",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543907": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266522": {
+    "name": "BRKT-COVER MOUNT LH REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141836_ASSY": {
+    "name": "CONNECTING PLATE, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5252974": {
+    "name": "BRKT-STEERING TUBE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137367": {
+    "name": "SHAFT-PIVOT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547793": {
+    "name": "NUT-HEX M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_SCREEN": {
+    "name": "Gauge Screen",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452248": {
+    "name": "FENDER-RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141279_XC": {
+    "name": "BLADE CORE_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_RUSH_CAP_10": {
+    "name": "MOUNT, SNO HAND GRD, CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021434": {
+    "name": "ASM-R/T SHOCK MOUNT 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044120-ROD": {
+    "name": "7044120-spring-rod",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137323": {
+    "name": "SPACER-CLUTCH TEAM METRIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023230_SW1": {
+    "name": "CHASSIS 144 CONV VOYGR BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519010": {
+    "name": "SCR-M8X1.25X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205327": {
+    "name": "ASM-TUBE INTAKE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547333": {
+    "name": "NUT-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022828_SIMP": {
+    "name": "CYL-85MM,SDI MONOBLOCK, NEW EV",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5254492": {
+    "name": "FITTING-COOLER .75X20 DEG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001064": {
+    "name": "IC USB 2.0 HS HUB CTRLR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7520133": {
+    "name": "SCR-TXTH-M6X1.0X30,8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5264150": {
+    "name": "COVER-TAILLIGHT HARNESS 129",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556702": {
+    "name": "WSHR-0.5625X1.1X0",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1241284": {
+    "name": "WELD-COOLER BULKHEAD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7662246": {
+    "name": "STUD-1/4 TURN 6MMX16MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266235": {
+    "name": "BRKT-PLASTIC MOUNT FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519097": {
+    "name": "SCR-HH M8X1.25X45 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141475": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061166_HOUSING": {
+    "name": "ROD END-M10 HOUSING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543909_XC": {
+    "name": "BLADE SUB RH_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7621432": {
+    "name": "RIVET-POP 3/16(.126-",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562_SPRING_XC": {
+    "name": "7044562_SPRING_ASSY_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338645": {
+    "name": "TUBE-XBRACE FRONT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_RUSH_MNT_10": {
+    "name": "MOUNT, SNO HAND GRD, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044120-JAM-NUT": {
+    "name": "7044120-spring-jam-nut",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519113": {
+    "name": "SCR-TXTH-M5X0",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019188": {
+    "name": "CLOSEOFF-REAR TUNNEL, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1590001": {
+    "name": "ASM-WHEEL, PLAIN, 6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "99904004": {
+    "name": "SWITCHBACK ASSAULT SUSPENSION ARMS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518238": {
+    "name": "SCR-10X5/8-HI/LO,PN-T25,TRX-M",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5255015": {
+    "name": "BRKT-BAG SUPPORT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022712_SW": {
+    "name": "MOUNT1-ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1240094": {
+    "name": "CAP, OIL TANK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-MANIFOLD_SOLID_BREP_107291": {
+    "name": "6-manifold_solid_brep_107291",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137796": {
+    "name": "SPACER-BUSHING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438460": {
+    "name": "BUSHING-SKI PIVOT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205097_SW": {
+    "name": "SUB,EV COOLANT HOSE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022698": {
+    "name": "MOUNT-ENGINE INSERT RAD,MAG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5142128": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547366": {
+    "name": "CLIP-\"U\",M6.0X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061179_10655BS": {
+    "name": "BEARING-SPHERICAL UCA 31MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824801_SW": {
+    "name": "WELD-UCA RMK LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "9570127": {
+    "name": "LOCTITE 767-64 ANTI SEIZE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080560": {
+    "name": "CLAMP-HOSE, 1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543184_SW": {
+    "name": "FRONT PIVOT ARM, WELD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2637022": {
+    "name": "ASM-HANDHOLD GRIP/HEATER LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001045": {
+    "name": "RES .10 OHM 1/8W 5%",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "3514384": {
+    "name": "BEARING-.7874 X 1.6535 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439309": {
+    "name": "BUSHING-TIE ROD BOOT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5339046": {
+    "name": "TUBE-BUMPER AL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260556": {
+    "name": "SPACER-CENTER TUNNEL,146",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455207": {
+    "name": "COVER-TUNNEL PLATE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337514": {
+    "name": "TUBE-INNERSTRG,21.34X23",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140492": {
+    "name": "SHAFT-H-BRKT CC AL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518960": {
+    "name": "SCR-M10X1.5X65 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1823915": {
+    "name": "ASM-SKI PRO STEER BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5814028": {
+    "name": "GASKET-CHAINCASE COVER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519967": {
+    "name": "SCR-HXFL-M6X1X50 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2637023": {
+    "name": "ASM-HANDHOLD GRIP/HEATER RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7045058_XC": {
+    "name": "SPRING-COMP 90/260# 2\"_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3023292": {
+    "name": "MOUNT-ENGINE PTO FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452364": {
+    "name": "BEZEL-GAUGE CPI B1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_BODY": {
+    "name": "SHOCK-RTS W/E ASSAULT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7189832": {
+    "name": "DECAL-PASS SEAT WARNING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4015321": {
+    "name": "SWITCH-AUX SHUT-OFF DC-SDI",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519908": {
+    "name": "SCR-HXFL-M6X1.0X70 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261169": {
+    "name": "BRKT-PLENUM SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_BODY_2": {
+    "name": "SHOCK-RTS W/E ASSAULT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518533": {
+    "name": "SCR-HXFL-M6X1.0X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1333119": {
+    "name": "ASM-CHAINCASE INTERMD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543184": {
+    "name": "FRONT PIVOT ARM, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5453667": {
+    "name": "BUSHING-GRABHANDLE 1\"",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5436992": {
+    "name": "CAPLUG-#17 TAPERED 1.447-1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141278": {
+    "name": "129 RUNNINGBOARD-RH MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001014": {
+    "name": "CAP 22PF 5% 100V",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1590459": {
+    "name": "ASM-WHEEL,SPOKE,7",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7043732_2": {
+    "name": "SPRG-COMP .306X11",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450862": {
+    "name": "COVER-THROTTLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061166": {
+    "name": "ROD END-M10X26",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455490": {
+    "name": "LEVER-SEAT LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7670040": {
+    "name": "FASTENER-U TYPE CLIP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547405": {
+    "name": "NUT-M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258819": {
+    "name": "BEARING-FLANGE JACKSHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438969": {
+    "name": "SADDLEBAG-LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7082026": {
+    "name": "SPRING-LATCH,SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019308": {
+    "name": "WELD-TUBE XBRACE REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "111007_LCW_1912067_MCYL_ASY": {
+    "name": "MASTER CYLINDR ASY",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519254": {
+    "name": "SCR-HXFL-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019180_BALL": {
+    "name": "---",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341141": {
+    "name": "TUBE-UPPER RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139840": {
+    "name": "EXCHANGER-TUNNEL 144, RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341135": {
+    "name": "TUBE-FRONT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543904_REAR_SUS": {
+    "name": "PRO-CC REAR SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7710486": {
+    "name": "RING-RETAINING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519121": {
+    "name": "SCR-HXFL-M6X1.0X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022409_BUSHING": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258817": {
+    "name": "BRKT-SUPPORT OIL PUMP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260700": {
+    "name": "CLOSEOFF-REAR TUNNEL CONV",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452391": {
+    "name": "BOTTLE-LOWER COOLANT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2688859": {
+    "name": "ASM-COVER PASS SEAT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452369": {
+    "name": "COVER-TAILLIGHT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001035": {
+    "name": "TXRX ETHERNET 10/100 RMII",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5437974": {
+    "name": "HANDLE-RECOIL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824345": {
+    "name": "ASM-HANDLEBAR AL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2687412_REF": {
+    "name": "RUBBER CROSSBAR RMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438876": {
+    "name": "BUSHING-CRANK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450837": {
+    "name": "SUPPORT- HOUSING,TAILLIGHT,BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022286_TEE_BUSHING": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341258": {
+    "name": "TUBE-GUSSET RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341142": {
+    "name": "TUBE-CROSS FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2010424": {
+    "name": "ASM-LEVER HTR HI/LO 35",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_09": {
+    "name": "Icon, Reverse",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5435681": {
+    "name": "TOE-PLASTIC, SKI",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438971": {
+    "name": "LID-SADDLEBAG LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1590460_XC": {
+    "name": "ASM-WHEEL,REAR_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5340575": {
+    "name": "TUBE-HAND HOLD LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2883569A": {
+    "name": "K-PASS SEAT AND SUPPORT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547601": {
+    "name": "INSERT-AVK,AK,M6X1.00,4",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518760": {
+    "name": "SCR-HXFL-M10X1.25X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661130": {
+    "name": "RIVET-3/16-.214-",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5140365": {
+    "name": "GRIPPER-TUNNEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080843": {
+    "name": "SPRINGBAND-CLAMP 32/12, BROWN OR SILVER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_02": {
+    "name": "Icon, Engine Hot",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556175": {
+    "name": "WASHER-.325X1.20X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543909": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001065": {
+    "name": "CRYSTAL 24MHZ 18PF",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5332797": {
+    "name": "TUBE-HITCH MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022713_SW": {
+    "name": "MOUNT2-ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556799": {
+    "name": "WSHR-M6 OFFSET 2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260703": {
+    "name": "PAD-SUSP REAR UPPER 144 RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338685": {
+    "name": "TUBE-RACK 31.8X2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5413441": {
+    "name": "GROMMET-SEAT BASE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824426": {
+    "name": "WELD-STEERING POST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138265": {
+    "name": "MOUNT-LOWER REAR MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261061": {
+    "name": "SUPPORT-FOOTREST RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001038": {
+    "name": "Connector SD/MMC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7044379_BODY_P_XC": {
+    "name": "SHOCK-RTS W/E PRO XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337428": {
+    "name": "TUBE-SUPPORT RUNNING BOARD 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547431": {
+    "name": "NUT-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1240940": {
+    "name": "WELD/ASM-TUNNEL COOLER 144",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518612": {
+    "name": "SCR-HXFL-M6X1.0X35 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141836": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5335899": {
+    "name": "ROD-TIE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0113202": {
+    "name": "LYT-17 REAR BUMPER/HITCH/RACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_MODE": {
+    "name": "Mode Button",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1170046_REARBUMPER": {
+    "name": "REAR BUMPER/RACK LAYOUTS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "GAUGE_PCB_BOARD": {
+    "name": "Gauge PCB Board",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452441_XC": {
+    "name": "CAP-RAIL TIP_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556565": {
+    "name": "WSHR-6.4X18.0X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824381_SW": {
+    "name": "ASM-UCA MOLY LH BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140781": {
+    "name": "TUBE-CROSSOVER EXTRUDED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1910740_2": {
+    "name": "ASM-BRAKE CALIPER AIR SNO LR20",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138286": {
+    "name": "CLIP-MACH RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2010426": {
+    "name": "ASM-SWITCH AUX SHUTOFF STD MNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519993": {
+    "name": "SCR-TXPH-M6X1.0X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452414_2": {
+    "name": "INTAKE CASE 2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547442": {
+    "name": "NUT-HEX M10X1.5 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450933": {
+    "name": "BASE-TIE ROD BOOT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021568": {
+    "name": "ASM REAR RACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001036": {
+    "name": "Standard LED - SMD Green Clear 569nm",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5451629": {
+    "name": "PLUG-TUBE,LOCKING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337391": {
+    "name": "TUBE-BRACE LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2685716": {
+    "name": "ASM-SEAT BLK/WHITE/RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543905_SW": {
+    "name": "REAR PIVOT ARM, WELD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0114026_SW2": {
+    "name": "HOOD-UV TPO BSC 2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266237": {
+    "name": "PLATE-LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824804_SW": {
+    "name": "WELD-LCA,RH RMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438035": {
+    "name": "CAPLUG-TAPERED,#T-4X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261189": {
+    "name": "MOUNT-U,HITCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633083": {
+    "name": "SHIM-TUBE CAST 31",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543906_SW_XC": {
+    "name": "ARM, WELD MODEL_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2637306": {
+    "name": "ASM-PASS SEAT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562-BODY_2_XC": {
+    "name": "SHOCK-F/T W/E CC_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136569": {
+    "name": "BUSHING-M16ODX10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_HND_GRD_FINAL_RH": {
+    "name": "HAND GUARD, SNO, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044120-BODY": {
+    "name": "SHOCK-IFS WE NEEDLE PIGGY SHRT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518936": {
+    "name": "SCR-M6 X 1 X 16 TR/TX-M",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136571": {
+    "name": "MOUNT-BUMPER METRIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824181": {
+    "name": "ASM-TIE ROD, WIDE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414472": {
+    "name": "PLUG-DRAIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258323": {
+    "name": "BRKT-PIPE/CHASSIS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520559": {
+    "name": "M6X1.0X30 CARRIAGE CL8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1022101_SW": {
+    "name": "GUARD CLUTCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337390": {
+    "name": "TUBE-BRACE LH, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "SELF_TAPPING_SCREW_M3X6": {
+    "name": "self_tapping_screw_m3x6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137569": {
+    "name": "SPACER-SKI SPINDLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205058_BODY": {
+    "name": "ADAPTOR-THROTTLE BODY,INTSTUFF",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138700": {
+    "name": "CAP-TUBE CROSS UCA",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414938": {
+    "name": "SEAL-STEERING BUSHING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520283": {
+    "name": "SCR-SHLDR-TXTH M5X0",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137845": {
+    "name": "SPINDLE-MACH,LH METRIC,BJRMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1823802": {
+    "name": "ASM-SPINDLE RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661624": {
+    "name": "PIN-RETAINING .186X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262725_SW": {
+    "name": "HOSE ENG/COOLER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635905": {
+    "name": "ASM-BUMPER,REAR,BASIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520711": {
+    "name": "SCR-TXTH-M6X1.0X35 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633385": {
+    "name": "SUPPORT-RUNNINGBOARD REAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520233": {
+    "name": "SCR-HXFL-M6X1.0X105 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5340890": {
+    "name": "TUBE-BUMPER ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543910_XC": {
+    "name": "BLADE SUB LH_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "LABEL_ASSAULT_LH": {
+    "name": "LABEL 2 POLARIS LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5435156": {
+    "name": "NUT - FILLER NECK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266234": {
+    "name": "BRKT-HOOK INNER RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205241": {
+    "name": "ASM-THROTTLE BODY,48MM,16",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256864": {
+    "name": "CLOSEOFF-RUNNING BOARD 137 RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137017": {
+    "name": "PLUG-TUBE M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341148": {
+    "name": "TUBE-GUSSET ANGLED RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1333118_SW": {
+    "name": "CASE,DRIVETRAIN SHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519092": {
+    "name": "SCR-TXTH-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2637118": {
+    "name": "ASM-COVER BCKRST W/DECAL TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7052593": {
+    "name": "FITTING-1/4 STRAIGHT W/FILTER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136570": {
+    "name": "BLOCK-IDLER BOLT ADJ METRIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_COVER1": {
+    "name": "Gauge Panel, Front Cover",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452065": {
+    "name": "GRIP-HANDLEBAR BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518578": {
+    "name": "SCR-HXFL-M6X1.0X35 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518954": {
+    "name": "SCR-M8X1.25X40 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019666": {
+    "name": "ASM-BRKT IDLER TOP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5813962": {
+    "name": "FOAM-INTAKE LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061173_BALL": {
+    "name": "BEARING-SPHERICAL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258861": {
+    "name": "DEFLECTOR-SNOW EXHAUST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3610030": {
+    "name": "SEAL-OIL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262726_SW": {
+    "name": "HOSE, BOTTLE/ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7662209": {
+    "name": "PIN-CLEVIS 1/2X4",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2883646": {
+    "name": "K-PASS SEAT SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139018_SIMP": {
+    "name": "COVER-HEAD 85 TWIN CH BP MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258346": {
+    "name": "FITTING-COOLER STRAIGHT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555935": {
+    "name": "WASHER-.28X.81X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5414191": {
+    "name": "STRAP-RUBBER 70MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001034": {
+    "name": "Inductor 2.2uH smt 2.6A, 58 mOhm",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1823898": {
+    "name": "ASM-SPINDLE,RH METRIC,RMK BJ",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547464": {
+    "name": "NUT-HEX-M12X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3023293": {
+    "name": "MOUNT-ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260702": {
+    "name": "PAD-SUSP INNER,MTN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5413563": {
+    "name": "O-RING 20.30MMX2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455488": {
+    "name": "BODY-LATCH SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024203": {
+    "name": "WELD-TUBE FRAME PASS SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3023291": {
+    "name": "MOUNT-ENGINE INSERT RAD MAG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258830": {
+    "name": "PLUG-COOLER CENTER RIGHT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1020590": {
+    "name": "WELD-CARGO RACK 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5436628": {
+    "name": "NUT-PFA",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1023550": {
+    "name": "WELD-HAND HOLD RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824343_SW": {
+    "name": "WELD-STEERING POST UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136572": {
+    "name": "SFT-M10X1.5IDX17.47ODX220",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7517510": {
+    "name": "SCR-HH-M6X1.0X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520311": {
+    "name": "SCR-TXTH-M8X1.25X15 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547790": {
+    "name": "NUT-RIVNUT,HEX,M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414695": {
+    "name": "GRIP-HANDLEBAR,1\",LONG,BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5132334": {
+    "name": "COVER-MACH,TAPERED,CAPTIVATING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139172": {
+    "name": "SHAFT-CROSS MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_06": {
+    "name": "Icon, Low Fuel",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5340576": {
+    "name": "TUBE-HAND HOLD,RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341069": {
+    "name": "TUBE-CROSS REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001018": {
+    "name": "IC EEPROM 32KBIT 400KHZ SOT23-6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7061190_SW": {
+    "name": "ASM-RACK LINK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635205_P": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7621429": {
+    "name": "RIVET-3/16 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5450189": {
+    "name": "BOTTLE-UPPER COOLANT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341145": {
+    "name": "TUBE-FRAME PASS SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5211688": {
+    "name": "GASKET-EXHAUST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "LABEL_POLARIS_RH": {
+    "name": "LABEL 1 POLARIS RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001025": {
+    "name": "CONN HEADER FEM 10POS .1\" DL TIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7518656": {
+    "name": "SCR-TXPH-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "2687412": {
+    "name": "BAR-MOUNTAIN, BASIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450542": {
+    "name": "COVER-CONTROL LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518941": {
+    "name": "SCR-M10X1.5X60-8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5333285": {
+    "name": "SPACER-IDLER,LONG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556509": {
+    "name": "BUSHING-1.00X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140899": {
+    "name": "MOUNT-SEAT MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341137": {
+    "name": "TUBE-REAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520068": {
+    "name": "STUD-SELF-CLINCH M5X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "CONN_16PIN": {
+    "name": "conn_16pin",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5454820": {
+    "name": "FLAP-SNOW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438117": {
+    "name": "HANDLE-LNR ANCHOR,BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414733_XC": {
+    "name": "STRAP-LIMITER, ASM_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7082361": {
+    "name": "CLIP-ATTCHT,NAIL.06",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "PJ-002A_3": {
+    "name": "CONN POWER JACK 2.1MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "22-26344_1": {
+    "name": "MASTER CYLINDER RESERVOIR CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1322948": {
+    "name": "ASM-DRVN CLTCH,TEAM,BSC,LWTSPL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137394": {
+    "name": "SLEEVE-TORQUE STOP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519286": {
+    "name": "SCR-HXFL-M10X1.25X75 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080844": {
+    "name": "SPRINGBAND-CLAMP 35/12,BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519045": {
+    "name": "SCR-TX TRUSS-#14X3/4, HI/LO B",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555939": {
+    "name": "WSHR-1.28 X 1.69 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021565": {
+    "name": "ASM-HITCH,FLAPPER/BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001019": {
+    "name": "CONNECTOR USB TYPE A",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1590511": {
+    "name": "WHEEL-LWT, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022697_RUBBER": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1204992_SW": {
+    "name": "EXH VALVE BASE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5265188": {
+    "name": "BRKT-SHAFT SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338684": {
+    "name": "TUBE-RACK 31.8X2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001041": {
+    "name": "IC 4CH ESD SOLUTION W/CLAMP 6SON",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "2413200_CON_SW": {
+    "name": "2413200 CONNECTORS SW MODEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633122": {
+    "name": "SPACER-TUBE CAST 27",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0113418": {
+    "name": "LYT-17 CARGO RACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001059": {
+    "name": "TRANS NPN/NPN W/RES 50V SMINI6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7044379_BODY_2_XC": {
+    "name": "SHOCK-RTS W/E PRO XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5522253": {
+    "name": "BUMPER-JOUNCE FTA TAPERED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260858": {
+    "name": "BRKT-XBRACE FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556064": {
+    "name": "WSHR-6.4X18.0X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266233": {
+    "name": "BRKT-HOOK INNER LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547753": {
+    "name": "NUT-CLINCH-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137360": {
+    "name": "BUSHING-M10X17",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ASSY": {
+    "name": "Gauge Panel",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439062": {
+    "name": "BUSHING-L&R ANCHOR SNOW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337390P": {
+    "name": "TUBE-FOOTREST RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141475_XC": {
+    "name": "BLADE_CAP_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556563": {
+    "name": "WSHR-10.4X28.58X2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_COVER2": {
+    "name": "Gauge Panel, Back Cover",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5410925": {
+    "name": "BUMPER-PIVOT ARM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520147": {
+    "name": "SCR-TXTH-M6X1.0X15 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5138285": {
+    "name": "CLIP-MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520369": {
+    "name": "SCR-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519133": {
+    "name": "SCR-HXFL-M8X1.25X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450457": {
+    "name": "AIR SILENCER-UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547487": {
+    "name": "NUT-HXFL-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2521361": {
+    "name": "ASM-OIL BOTTLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "116010_MJP_RTS_PIVOT_WELD": {
+    "name": "WELD-SHOCK PIVOT ARM WT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001043": {
+    "name": "Integrated Power Management Unit",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7520083": {
+    "name": "SCR-HX-M10X1.5X100,8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019180": {
+    "name": "ASM-TORQUE LINK FIXED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520428": {
+    "name": "STUD-M6X1.0X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261109": {
+    "name": "PLATE-REAR RACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0114026_SW3": {
+    "name": "HOOD-UV TPO BSC 3",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5454305": {
+    "name": "SWITCH-BOX LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021866": {
+    "name": "ASM-CLOSEOFF REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7188334": {
+    "name": "DECAL-REFLECTOR RED LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450428": {
+    "name": "PANEL-SIDE RH PNTD TPO BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543908_XC": {
+    "name": "RUNNER LH_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547889": {
+    "name": "NUT-JACK INSERT M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_SHAFT_P_XC": {
+    "name": "SHOCK-RTS W/E PRO XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_HAND_GUARD_FINAL": {
+    "name": "HAND GUARD, SNO, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556524": {
+    "name": "WASHER-.344X.688X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5135911": {
+    "name": "CAP-END,SPLINE,DRIVE SHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266739": {
+    "name": "PLATE-LOCATING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139255": {
+    "name": "MOUNT-R/T SHOCK MACH 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451094": {
+    "name": "PLATE-ADAPTOR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7081210": {
+    "name": "PLUG-TUBE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "ORG_HEAT_EXCHANGER_ASSY": {
+    "name": "ORG HEAT EXCHANGER ASSY",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519112": {
+    "name": "SCR-TXTH-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_SET": {
+    "name": "Set Button",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5257099": {
+    "name": "BRKT-IDLER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5134423": {
+    "name": "GEAR-STARTER-RING CLUTCH HCR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138449": {
+    "name": "MOUNT-STEERING LOWER MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260225": {
+    "name": "BRKT-SUPPORT RACK BOTTOM 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137110": {
+    "name": "BLOCK-HB RISER,60MM,RMK,MET",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061165": {
+    "name": "ROD END-M10X23 75DEG LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5415586": {
+    "name": "HOSE-BOTTLE/TUNNEL OUT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2411099": {
+    "name": "ASM-TAILLIGHT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5437121": {
+    "name": "HANDLE-SEAT BASE LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3023290": {
+    "name": "MOUNT-ENGINE INSERT RAD PTO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547423": {
+    "name": "NUT-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543907_XC": {
+    "name": "RUNNER RH_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7710807": {
+    "name": "RETAINER-1/4 TURN 6MM,STEEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258290": {
+    "name": "BRKT-RECOIL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266238": {
+    "name": "PIN-MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338007": {
+    "name": "BAR-HANDLE INTEG HOOKS AL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024200": {
+    "name": "WELD-SEAT SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1017851": {
+    "name": "ASM-BUMPER,RR,RMK,AL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023221": {
+    "name": "ASM-RUNNINGBOARD 129 RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341136": {
+    "name": "TUBE-FRONT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7052362": {
+    "name": "GROMMET-FLANGED, .36X.56X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661637": {
+    "name": "RIVET-3/16-.090-",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7043241": {
+    "name": "SPRING-TOR,",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555919": {
+    "name": "WASHER-.510X.840X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266240": {
+    "name": "PLATE-BUN SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139282": {
+    "name": "CLOSEOFF-TUNNEL FRONT MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205379": {
+    "name": "ASM-SILENCER W/COILS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7511848": {
+    "name": "SCR-6X3/8 PH TR HD GR5-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635838": {
+    "name": "ASM-FENDER RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023230": {
+    "name": "ASM-CHASSIS 144 CONV VOYGR BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5814409": {
+    "name": "FOAM-COOLING HOSE 5/8\"",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141400": {
+    "name": "SHAFT-RTA MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5454303": {
+    "name": "HANDGAURD-PASS LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022642_SW_SIMP": {
+    "name": "HEAD-CYL,85 CH BYPASS,HBV",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256426": {
+    "name": "PLUG-COOLER CENTER LEFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556545": {
+    "name": "WSHR-10.5X24X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5413887": {
+    "name": "BUSHING-RUBBER,LNR ANCHOR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001060": {
+    "name": "Crystal 25MHz",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5258881": {
+    "name": "BRKT-TAILLIGHT REINFORCE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186": {
+    "name": "ASM-DRAGLINK FIXED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450184-WHEEL": {
+    "name": "5450184-WHEEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7512076": {
+    "name": "SCR-#10X1/2-HI/LO-TRX-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023972": {
+    "name": "ASM-CHASSIS 137 PROG BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5438605": {
+    "name": "SPROCKET-8T,2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455204": {
+    "name": "RACK-PASS SEAT SUPPORT COVER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520980": {
+    "name": "PLUNGER-LATCH 8MM SHORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519238": {
+    "name": "SCR-TXTH-M8X1.25X35 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258829": {
+    "name": "PLUG-COOLER TOP LEFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450426": {
+    "name": "NOSEPAN-BASIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266523": {
+    "name": "BRKT-COVER MOUNT RH REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "40-19091-MACH_2": {
+    "name": "MASTER CYLINDER MACH_2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137587": {
+    "name": "SLEEVE-CHAINCASE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518546": {
+    "name": "SCR-M6X1.0X20MM,TX,PH,8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019180_P": {
+    "name": "arm-tork link",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5454304": {
+    "name": "HANDGAURD-PASS RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2010409_CAP": {
+    "name": "ASM-CONTROL LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137850": {
+    "name": "COVER-THERMOSTAT M6 BLEED MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555832": {
+    "name": "WASHER-.813 X .406 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001023": {
+    "name": "XTAL 32.768kHz",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5262772": {
+    "name": "SIDE-TUNNEL RH CONV 144",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5434989": {
+    "name": "SLEEVE-TORSION SPRING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "99902002": {
+    "name": "INDY ADVENTURE SUSPENSION ARMS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023919": {
+    "name": "ASM-BUMPER REAR TP129 ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "99901001": {
+    "name": "INDY ADVENTURE STEERING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1022502": {
+    "name": "ASM-TUNNEL SIDE 144 LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556327": {
+    "name": "WASHER-NYLN, BLK, .875 X 1.25 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455206": {
+    "name": "COVER-LATCH RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260907": {
+    "name": "SHIELD-HEAT RESONATOR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337942": {
+    "name": "TUBE-RESONATOR MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338689": {
+    "name": "TUBE-RACK 25",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001063": {
+    "name": "IC REG LDO CAP FREE 8-SON",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5256783": {
+    "name": "FOOTREST-LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140765": {
+    "name": "MNT-MTN BAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450184-RUBBER": {
+    "name": "5450184-RUBBER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518971": {
+    "name": "SCR-M10X1.5X50 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543906_SW": {
+    "name": "ARM, WELD MODEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519004": {
+    "name": "SCR-M10X1.25X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266236": {
+    "name": "BRKT-LATCH MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341144": {
+    "name": "TUBE-CROSS REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138138": {
+    "name": "MOUNT-GREASE ZERK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_04": {
+    "name": "Icon, Low Battery Voltage",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5634116": {
+    "name": "SPACER-RUNNINGBOARD REAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5415589": {
+    "name": "GASKET-DIGITAL GAUGE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_BODY_XC": {
+    "name": "SHOCK-RTS W/E PRO XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080106": {
+    "name": "1/2 X 3/8 STAPLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "41-26345_1": {
+    "name": "MASTER CYL RESERVOIR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1590551": {
+    "name": "ASM-DRVSHAFT TUB SMOOTH 2S-8T",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2634156_PLATE1": {
+    "name": "ASM-HINGE,PLATE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022698_RUBBER": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2521344_SW": {
+    "name": "FUEL PIPELINE 1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5414969": {
+    "name": "HOSE-TBODY/COOLANT BOTTLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661973": {
+    "name": "RIVET-4.8MM DIA-1.5-6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "6-OTS-0001008": {
+    "name": "Capacitor 1uF 10V Ceramic 10%",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1824342": {
+    "name": "ASM-STEERING POST UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5521499": {
+    "name": "BUMPER-JOUNCE,FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3514309": {
+    "name": "BEARING-BALL, 6205 LLB",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556153": {
+    "name": "WASHER-3/8, FW SAE STL THRU-HRD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5254382": {
+    "name": "CLOSEOFF-REAR TUNNEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338687": {
+    "name": "TUBE-RACK 31.8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141495": {
+    "name": "PLUG-TUBE, M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413777_HARNESS_SW": {
+    "name": "2413777 harness sw model",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547332": {
+    "name": "NUT-M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5438262": {
+    "name": "STRAP-RUBBER 57MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001002": {
+    "name": "Capacitor 0.01uF 16V",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7044562-ROD_XC": {
+    "name": "ROD_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556737": {
+    "name": "WSHR-FLAT M6.35X14.30X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "111007_1333119_CHAIN_REF": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266232": {
+    "name": "BRKT-HOOK OUTER RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261202": {
+    "name": "ARM-STEERING POST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7516823": {
+    "name": "SCR-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4015352": {
+    "name": "SOFTWARE-CPIB1SNO,UNP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1020782": {
+    "name": "ASM-CARGO RACK 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141836_XC": {
+    "name": "CONNECTING PLATE_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-BB-0001061": {
+    "name": "SWITCH TACT SPST W/GND SMD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5341070": {
+    "name": "TUBE-CROSS FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555864": {
+    "name": "WSHR-1.00 X 1.250 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138294": {
+    "name": "MOUNT-ENGINE REAR BASE MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450972": {
+    "name": "BASE-SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7621467": {
+    "name": "RVT-3/16(.251-",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824113_2": {
+    "name": "ASM-SHOCK IFS W/E SHORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "99903003": {
+    "name": "SWITCHBACK ASSAULT STEERING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1263038_SW": {
+    "name": "ASM-TUNED PIPE 800 MAIN_SW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5415302": {
+    "name": "HOSE-SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-BB-0001062": {
+    "name": "1.5A PWR DIST SWITCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1824113": {
+    "name": "ASM-SHOCK IFS W/E SHORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5432535": {
+    "name": "SPACER-IDLER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256849": {
+    "name": "FLOOR-BULKHEAD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2521341_SW": {
+    "name": "FUEL TANK BODY",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5261135": {
+    "name": "TUBE-RACK,EXTRUDED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "LABEL_ASSSULT_RH": {
+    "name": "LABEL 2 POLARIS RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266373": {
+    "name": "BRKT-COVER MOUNT RH FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5142129": {
+    "name": "SHAFT-CROSS RMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547453": {
+    "name": "NUT-HXFL-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451574": {
+    "name": "CLOSEOFF-NOSEPAN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021376_SW": {
+    "name": "R/T SHOCK MOUNT SW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2688858": {
+    "name": "ASM-PASSENGER SEAT BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141836_ASSY_XC": {
+    "name": "CONNECTING PLATE, ASM_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2883569A_2": {
+    "name": "K-PASS SEAT AND SUPPORT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562-BODY_2": {
+    "name": "SHOCK-F/T W/E CC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3222231": {
+    "name": "SPROCKET-37T 3/4W 15T SPL PM LW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266689": {
+    "name": "PLATE-SEAT LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519844": {
+    "name": "SCR-SH-M10X1.5X30 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452414_1": {
+    "name": "INTAKE CASE 1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2634156_PIN": {
+    "name": "ASM-HINGE,PIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "116010_MJP_RTS_PIVOT_TUBE": {
+    "name": "TUBE-REAR PIVOT ARM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1202640_SW": {
+    "name": "EV HOUSING SW Model",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139042": {
+    "name": "MOUNT-ENGINE FRT BASE MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337766": {
+    "name": "BRACE-FRONT BUMPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138674": {
+    "name": "MOUNT-BUSHING STEERING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137551": {
+    "name": "SPINDLE-MACH RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556490": {
+    "name": "WASHER-SPRING .406X1.25X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7081693": {
+    "name": "SPRINGBAND-CLAMP 24/12",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341139": {
+    "name": "TUBE-GUSSET LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519216": {
+    "name": "SCR-HXFL-M10X1.5X40 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450836": {
+    "name": "BLOCK-THROTTLE LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337395": {
+    "name": "TUBE-FRAME REAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543724_XC": {
+    "name": "ASM-ARM 83_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338688": {
+    "name": "TUBE-RACK 25.4X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5454306": {
+    "name": "SWITCH-BOX RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021436": {
+    "name": "WELD-TUBE XBRACE FRONT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547707": {
+    "name": "NUT-HEX-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518906": {
+    "name": "SCR-M8X1.25X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "2413615": {
+    "name": "ASM-HEADLIGHT LED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1023220": {
+    "name": "ASM-RUNNINGBOARD 129 LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341143": {
+    "name": "TUBE-CROSS CENTER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4014699": {
+    "name": "SWITCH-OIL LEVEL NO CONTACT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "PCB_BUTTON": {
+    "name": "pcb button",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5450881": {
+    "name": "BUSHING-STEERING POST UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2521382_SW": {
+    "name": "FUEL RAIL,AS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266239": {
+    "name": "BOSS-THREADED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2010409": {
+    "name": "ASM-CONTROL LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452415": {
+    "name": "PLENUM-LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080394": {
+    "name": "CLIP-PUSH ON",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7541925": {
+    "name": "NUT- NYLOC 10-24 Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5259794": {
+    "name": "MOUNT-SADDLEBAG REAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138263": {
+    "name": "MOUNT-UPPER MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262626_SW": {
+    "name": "HOSE COOLER/ENG WATERPUMP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256856": {
+    "name": "SIDE-BULKHEAD LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5453670": {
+    "name": "COVER-BACKREST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5252098": {
+    "name": "FITTING-COOLER,90 DEG,15",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0114026_SW4": {
+    "name": "HOOD-UV TPO BSC 4",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258831": {
+    "name": "PLUG-COOLER CENTER MIDDLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337513": {
+    "name": "POST-STEERING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5522230_INSTALLED": {
+    "name": "HI-FAX-PROG 120 BASIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661644": {
+    "name": "PIN-HITCH, 3/32-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258434": {
+    "name": "HOUSING-DRIVESHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413077": {
+    "name": "HEATER-GRIP LO/HI ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338663": {
+    "name": "TUBE-XBRACE FRONT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562-ROD": {
+    "name": "---",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337392": {
+    "name": "TUBE-BRACE RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2634156": {
+    "name": "HINGE-SADDLEBAG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024199": {
+    "name": "ASM-PASS SEAT FRAME",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518617": {
+    "name": "STUD-SELF-CLINCH M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061165_HOUSING": {
+    "name": "ROD END-M10 HOUSING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519236": {
+    "name": "SCR-HXFL-M6X1.0X16 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260224": {
+    "name": "BRKT-SUPPORT RACK REAR 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019861": {
+    "name": "WELD-TUBE BRACE RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5416822": {
+    "name": "COVER-LATCH PIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260523-11": {
+    "name": "BRKT-SEAT MOUNT REAR - BLACK PC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1204331_SW": {
+    "name": "RECOIL,600/800",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824547_SW": {
+    "name": "IDLER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001009": {
+    "name": "CAP_TANT_100UF_6.3V",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1590460": {
+    "name": "ASM-WHEEL,REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5432166": {
+    "name": "BUMPER-FRT TORQ ARM,XTRA 12",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260226": {
+    "name": "BRKT-SUPPORT RACK FRONT 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455205": {
+    "name": "COVER-LATCH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5413640": {
+    "name": "RUBBER-MOUNT PIPE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337815": {
+    "name": "TUBE-FRAME REAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413615_2": {
+    "name": "ASM-HEADLIGHT LED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140062": {
+    "name": "CLAMP-STEERING HOOP,BOTTOM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439668": {
+    "name": "LEVER-THROTTLE 35",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138293": {
+    "name": "BRACE-SUPPORT REAR RH MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555846": {
+    "name": "WASHER-FLAT, 3/8 TYPE B (W)-SS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519298": {
+    "name": "SCR-HXFL-M8X1.25X60 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824380_SW": {
+    "name": "ASM-LCA RH BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-MANIFOLD_SOLID_BREP_107141": {
+    "name": "6-manifold_solid_brep_107141",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633989": {
+    "name": "SPACER-RUNNINGBOARD REAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451143": {
+    "name": "LATCH-1/4 TURN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455490A": {
+    "name": "LEVER-SEAT LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256857": {
+    "name": "SIDE-BULKHEAD RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7710444": {
+    "name": "RING-RETAINING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3221099": {
+    "name": "SPROCKET-23T, 3/4W, 15 SPL, HV, PM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635481": {
+    "name": "ASM-FENDER LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022697": {
+    "name": "MOUNT-ENGINE INSERT RAD,PTO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262701_1": {
+    "name": "RESONATOR AXYS PART 1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7081692": {
+    "name": "SPRINGBAND-CLAMP 26/12",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-BB-0001029": {
+    "name": "IC EEPROM 2KBIT 2MHZ SOT23-6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "6-OTS-0001024": {
+    "name": "Ferrite Bead 150 Ohm 800mA",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5450838": {
+    "name": "PLATE-TAILLIGHT COVER,BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450184": {
+    "name": "WHEEL-LWT 5",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0113303-00": {
+    "name": "STD NOSE & FENDER FASTENER KIT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1543910": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338686": {
+    "name": "TUBE-RACK 31.8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2883637": {
+    "name": "K-PASS SEAT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413777_CON_SW": {
+    "name": "2413777 CONNECTORS SW MODEL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633386": {
+    "name": "SUPPORT-RUNNINGBOARD REAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0113320": {
+    "name": "LYT-17 BUMPER,REAR,RMK,BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5522230_INSTALLED_XC": {
+    "name": "HI-FAX-PROG 120 BASIC_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139427_SW_SIMP": {
+    "name": "COVER-WP,800,BP,MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5430011": {
+    "name": "WHEEL-PLAIN, 6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140953": {
+    "name": "SLEEVE-CHAMFERLESS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547339": {
+    "name": "NUT-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518143": {
+    "name": "SCR-SH-M8X1.25X40 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_07": {
+    "name": "Icon, High Beam",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450424": {
+    "name": "FENDER-LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556130": {
+    "name": "WASHER-.406X1.25X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5265187": {
+    "name": "ARM-SHOCK MNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519242": {
+    "name": "SCR-HXFL-M8X1.25X55 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138287": {
+    "name": "BRACE-LOWER LH MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137550": {
+    "name": "SPINDLE-MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260227": {
+    "name": "GUSSET-RACK 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186_11040BALL": {
+    "name": "ASM-DRAGLINK FIXED BALL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1263038_SW_CAP": {
+    "name": "ASM-TUNED PIPE 800 MAIN_SW_CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080842": {
+    "name": "SPRINGBAND-CLAMP 29/12,BLK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001046": {
+    "name": "Resistor 100Kohm 1/16W 1%",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "3022713_FLANGE": {
+    "name": "107017_rdk_revk_31mm_flange",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556212": {
+    "name": "WASHER-7/16 SAE,STF,THRU HRD-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518613": {
+    "name": "SCR-HXFL-M6X1.0X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5262396": {
+    "name": "ARM-PIVOT SHOCK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0114026_SW1": {
+    "name": "HOOD-UV TPO BSC 1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824137_SW": {
+    "name": "ASM-PITMAN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021435": {
+    "name": "WELD-TUBE XBRACE FRONT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824802_SW": {
+    "name": "WELD-UCA RMK RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451206": {
+    "name": "LID-STORAGE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341146": {
+    "name": "TUBE-GUSSET ANGLED LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562-BODY_XC": {
+    "name": "SHOCK-F/T W/E CC_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_RUSH_HND_GRD_MNT_FINAL": {
+    "name": "MOUNT, SNO HAND GRD, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044120-SPRING-CLIP": {
+    "name": "7044120-spring-clip",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1911986": {
+    "name": "DISC-BRAKE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140698": {
+    "name": "CAP-COOLER MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7710808": {
+    "name": "CLIP-1/4 TURN 6MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5255014": {
+    "name": "BRKT-BAG SUPPORT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "GAUGE_PCB_BOARD_ASSY_2": {
+    "name": "gauge_pcb_board_assy_2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519997": {
+    "name": "SCR-TXTH-M8X1.25X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451612": {
+    "name": "CAP-PLUG,T-862",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139569": {
+    "name": "CAP-COOLER CAST RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450390_SW": {
+    "name": "FUEL CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661970": {
+    "name": "PIN-DOWEL,5/32\"X7/8\", ZPC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137846": {
+    "name": "SPINDLE-MACH,RH METRIC,BJRMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547747": {
+    "name": "NUT-CLINCH M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5434590": {
+    "name": "ROLLER-SPRING, TRI-ADJ, RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7045058": {
+    "name": "SPRING-COMP 90/260# 2\"",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2521629": {
+    "name": "WELD-COOLANT BOTTLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341138": {
+    "name": "TUBE-REAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337503": {
+    "name": "TUBE-XBRACE REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5633278": {
+    "name": "BLOCK-WHEEL MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543905_SW_XC": {
+    "name": "REAR PIVOT ARM, WELD_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "LABEL_POLARIS_LH": {
+    "name": "LABEL 1 POLARIS LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266231": {
+    "name": "BRKT-HOOK OUTER LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141837": {
+    "name": "SPACER-17.46 OD X 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547421": {
+    "name": "NUT-CLINCH M8X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7552901": {
+    "name": "WASHER-5/16-SPRING LK-MED-Y",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "0114026_SW5": {
+    "name": "HOOD-UV TPO BSC 5",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021006": {
+    "name": "ASM-FRAME TUBULAR FRONT ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451001": {
+    "name": "BOTTLE-OIL",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "OTS-0001011": {
+    "name": "CAP 18PF 50V C0G 5%",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5438523": {
+    "name": "COVER-HANDLEBAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205241_2": {
+    "name": "ASM-THROTTLE BODY,48MM,16",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519102": {
+    "name": "SCR-SH-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450461_1": {
+    "name": "INTAKE CASE 3",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186_SW": {
+    "name": "ASM-DRAGLINK FIXED SW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186_11040RACE": {
+    "name": "ASM-DRAGLINK FIXED RACE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7557059": {
+    "name": "WASHER-FL 8.4X16.0X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5259793": {
+    "name": "MOUNT-SADDLEBAG REAR LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262686_SW": {
+    "name": "HOSE ENG/CLOSEOFF",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1543724": {
+    "name": "ASM-ARM 83",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2636491": {
+    "name": "ASM-HANDHOLD RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "18-27618_1": {
+    "name": "MASTER CYLINDER CONNECTOR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1205059_SW": {
+    "name": "REED VALVE,VFORCE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338674": {
+    "name": "TUBE-FRAME FRONT ALUM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555783": {
+    "name": "WSHR-FL #10 .203X.438X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5415314": {
+    "name": "GROMMET-LATCH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186_10544BS": {
+    "name": "ASM-DRAGLINK FIXED BS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256863": {
+    "name": "CLOSEOFF-RUNNING BOARD 137 LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555730": {
+    "name": "WASHER-.189X.314X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061166_STUD": {
+    "name": "ROD END-M10 STUD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139103": {
+    "name": "CAP-END,DRIVE SHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024448": {
+    "name": "K-PASS SEAT SUPPORT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1590457": {
+    "name": "ASM-WHEEL PLAIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450880": {
+    "name": "BUSHING-STEERING POST LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450427": {
+    "name": "PANEL-SIDE LH PNTD TPO BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7555918": {
+    "name": "BUSHING-MACH,.800X1.125X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_BODY_P": {
+    "name": "SHOCK-RTS W/E ASSAULT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021239_SW": {
+    "name": "MOUNT,SHAFT GEAR RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4012165": {
+    "name": "SWITCH-KEY,3 POS,MT SLV",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019183": {
+    "name": "ASM-BRACE LOWER, LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080998": {
+    "name": "CLAMP-VINYL COATED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001028": {
+    "name": "IC BUFF/DVR DL NON-INV",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "7519755": {
+    "name": "SCR-SH-SET-M8X1.25X8 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824803_SW": {
+    "name": "WELD-LCA,LH RMK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5437630": {
+    "name": "WHEEL-SPOKE,7",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661123": {
+    "name": "PIN-CLEVIS 3/16X1 1/4",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266230": {
+    "name": "BRKT-BASE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547430": {
+    "name": "NUT-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518490": {
+    "name": "SCR-1/4-20X1/2 TFM,HW-M",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337389": {
+    "name": "TUBE-FOOTREST LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413615_3": {
+    "name": "ASM-HEADLIGHT LED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519002": {
+    "name": "SCR M6X1.0X35 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138691": {
+    "name": "EXCHANGER-COOLER CENTER MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5434334": {
+    "name": "GUIDE-SPRING SQUARE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "12-26349_1": {
+    "name": "HAND BRAKE MASTER CYLINDER MAIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262701": {
+    "name": "ASM-RESONATOR AXYS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2636490": {
+    "name": "ASM-HANDHOLD LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520464": {
+    "name": "SCR-SPCL M6X1.0X20 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_10": {
+    "name": "Icon, Security",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019636": {
+    "name": "WELD-BUMPER FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7081466": {
+    "name": "SPRING-LATCH,SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414733": {
+    "name": "STRAP-LIMITER, ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061165_STUD": {
+    "name": "ROD END-M10 STUD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3514617": {
+    "name": "BEARING-25X52X15,SPH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5259792": {
+    "name": "MOUNT-SADDLEBAG FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635204_P": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5415139": {
+    "name": "HOSE-SUPPORT BYPASS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001016": {
+    "name": "CAP CER 10UF 10V",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1544014": {
+    "name": "WELD-H-BRACKET",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1204723_SW_SIMP": {
+    "name": "CRANKCASE,800 AS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5439576": {
+    "name": "MNT-AUX SHUT-OFF UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "111007_LCW_1912067_LEVER": {
+    "name": "MASTER CYLINDER LEVER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022712": {
+    "name": "107017_rdk_revk_31mm_flange",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140898": {
+    "name": "SPACER-BOLT M8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138648": {
+    "name": "SHAFT-PIVOT LWT LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2413200_HARNESS_SW": {
+    "name": "2413200 harness sw model",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_03": {
+    "name": "Icon, Low Oil",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450934": {
+    "name": "BASE-TIE ROD BOOT RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5410582": {
+    "name": "PLUG-CLUTCH HOLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5136572_XC": {
+    "name": "SFT-M10X1.5IDX17_XC.47ODX220",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5141277": {
+    "name": "RUNNINGBOARD-129 LH MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4015245": {
+    "name": "SWITCH-THROTTLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450861": {
+    "name": "BLOCK-THROTTLE UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5251047": {
+    "name": "TUBE-DRIVE SHAFT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019186": {
+    "name": "ASM-SUPPORT RUNNING BOARD 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4016438_ICON_08": {
+    "name": "Icon, Parking Brake",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450778": {
+    "name": "BOOT-EXHAUST, OUTLET",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556034": {
+    "name": "WASHER-.20 X .67 X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5210991": {
+    "name": "PLATE-HITCH MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022712_RUBBER": {
+    "name": "MOUNT-ENGINE RUBBER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7661855": {
+    "name": "RIVET-TUFLOK,.315-.325X",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "1019139": {
+    "name": "ASM-FOOTREST LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337765": {
+    "name": "TUBE-UPPER FRONT BUMPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7061186_11040HSG": {
+    "name": "ASM-DRAGLINK FIXED HSG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-BB-0001030": {
+    "name": "AM335x ARM Cortex-A8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "09-27809_1": {
+    "name": "PISTON CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138392": {
+    "name": "CHAINCASE-MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414733_INSTALLED": {
+    "name": "STRAP-LIMITER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1241285": {
+    "name": "ASM-COOLER BULKHEAD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024202": {
+    "name": "WELD-TUNNEL LATCH PLATE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258308": {
+    "name": "STRAP-STEERING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5258307": {
+    "name": "STOP-STEERING POST",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1824382_SW": {
+    "name": "ASM-UCA MOLY RH BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "RIBBON_CABLE": {
+    "name": "ribbon_cable",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137501": {
+    "name": "MNT-BUMPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "117011_REAR_SUS": {
+    "name": "PRO-XC REAR SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5414733_INSTALLED_XC": {
+    "name": "STRAP-LIMITER_XC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "756_JKR_RUSH_HND_GRD_MNT_02": {
+    "name": "MOUNT, SNO HAND GRD, CAP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5335719": {
+    "name": "SHAFT-SHOCK 43",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562-BODY": {
+    "name": "SHOCK-F/T W/E CC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2412968": {
+    "name": "SENSOR-SPEED PICKUP LG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519327": {
+    "name": "SCR-HXFL-M10X1.25X250 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450462": {
+    "name": "PLENUM-UPPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "ORG_HEAT_EXCHANGER": {
+    "name": "ORG HEAT EXCHANGER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5632624": {
+    "name": "SHAFT-L&R ANCHOR SNOW",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001037": {
+    "name": "DDR2 RAM 256MB(128Mx16)x1 400MHz",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5141279": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139936": {
+    "name": "TUBE-COOLANT CROSSOVER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5134982": {
+    "name": "ASM-SHEAVE STATIONARY, ES, BT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139568": {
+    "name": "CAP-COOLER MACH LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450971": {
+    "name": "BUN-SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337767": {
+    "name": "BUMPER-FRONT LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519246": {
+    "name": "SCR-SH-M10X1.5X45 12",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021867": {
+    "name": "ASM-TUNNEL CONV VOYGR 144 BSC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5437618": {
+    "name": "WHEEL-PLAIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044120-SPRING-NUT": {
+    "name": "7044120-spring-nut",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "3022082": {
+    "name": "SPARK PLUG-NGK, BPR 9ES",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5341140": {
+    "name": "TUBE-UPPER LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519971": {
+    "name": "SCR-HXFL-M8X1.25X65 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2879194": {
+    "name": "SNO HAND GUARD ASM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044379_SHAFT_P": {
+    "name": "SHOCK-RTS W/E ASSAULT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5455202": {
+    "name": "BUN-PASSENGER SEAT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5137356": {
+    "name": "BLOCK-HANDLEBAR RISER 89MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5140049": {
+    "name": "BUMPER-REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450461_2": {
+    "name": "INTAKE CASE 4",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2684844": {
+    "name": "ASM-SADDLEBAG RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1020287": {
+    "name": "ASM-TUBE CROSS UCA AL BONDED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "4015642": {
+    "name": "REGULATOR-DC LED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "CONN_RJ45_MAG": {
+    "name": "RJ-45 10/100 W/Magnetics",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5141020": {
+    "name": "ARM-MACH 83",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7556559": {
+    "name": "WSHR-M10.5X25X2",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1262425": {
+    "name": "WELD-MANIFOLD 800",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021579": {
+    "name": "WELD-REAR,RACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1204865_P": {
+    "name": "--",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519015": {
+    "name": "SCR-M10X1.5X75 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5631311": {
+    "name": "CLAMP-HANDLEBAR RETAINER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138266": {
+    "name": "MOUNT-LOWER REAR MACH RH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7044562_SPRING": {
+    "name": "7044562_SPRING_ASSY",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260223": {
+    "name": "BRKT-SUPPORT RACK 137",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7080534": {
+    "name": "CLAMP-HOSE, 9/16, SPRING-B",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5256850": {
+    "name": "PAD-FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520514": {
+    "name": "SCR-SPCL M6X1.0X16 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518472": {
+    "name": "SCR-HXFL-M10X1.5X230 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5131579": {
+    "name": "SHEAVE-MOVEABLE MACH, MID",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5337394": {
+    "name": "TUBE-SHOCK TOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1019146": {
+    "name": "ASM-TUBE FRAME REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7662251": {
+    "name": "RIVET-4.8MM DIA-1.5-6",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5260560": {
+    "name": "PAD-SUSPENSION REAR LOWER 144",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5338791": {
+    "name": "TUBE-MOUNT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139006": {
+    "name": "SPACER-BUSHING, LONG",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7547650": {
+    "name": "NUT-HEX-M6X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5138349": {
+    "name": "PLUG-TUBE REAR",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1333605_SW": {
+    "name": "DRIVETRAIN SHAFT,BRAKING",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519070": {
+    "name": "SCR-TXTH-M8X1.25X25 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7520865": {
+    "name": "PLUNGER-LATCH 8MM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7519098": {
+    "name": "SCR-HH M10X1.5X155 8",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2882119": {
+    "name": "Polaris\u00ae MessageCenter (MC) Gauge",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7710401": {
+    "name": "RET",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1024201": {
+    "name": "ASM-TUNNEL LATCH PLATE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5139244": {
+    "name": "MOUNT-JACKSHAFT BEARING MACH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2010425": {
+    "name": "ASM-THROTTLE CNTRL 35",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5450458": {
+    "name": "AIR-SILENCER LOWER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7043732": {
+    "name": "SPRG-COMP .306X11",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2684843": {
+    "name": "ASM-SADDLEBAG LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "2635202": {
+    "name": "ASM-TIE ROD BOOT LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1021324": {
+    "name": "WELD-SUSP PAD REAR 144 LH",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5263556": {
+    "name": "PLATE-ADJUSTER ARM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518412": {
+    "name": "SCR-M14 X 1.5 X 215, HX, 10",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "6-OTS-0001042": {
+    "name": "IC CTLR OVP 28V W/NMOS 6-DFN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "buy"
+  },
+  "5262771": {
+    "name": "SIDE-TUNNEL LH CONV 144",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "1823897": {
+    "name": "ASM-SPINDLE,LH METRIC,RMK BJ",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5452441": {
+    "name": "CAP-RAIL TIP",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "7518957": {
+    "name": "SCR-M10X1",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5266229": {
+    "name": "BRKT-COVER MOUNT LH FRONT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.MechanicalPart",
+    "source": "make"
+  },
+  "5451213": {
+    "name": "MID SMOKE WINDSHIELD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114019": {
+    "name": "STANDARD DRIVETRAIN",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "117011A": {
+    "name": "PRO-XC REAR SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "2879194A-13": {
+    "name": "SNO HAND GUARDS - RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114023": {
+    "name": "SWITCHBACK ASSAULT FRONT SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113312": {
+    "name": "STANDARD CONSOLE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113332": {
+    "name": "800 Cleanfire\u00ae H.O. ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114026-13": {
+    "name": "STANDARD HOOD - RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "5459999": {
+    "name": "WINDSHIELD AXYS DEEP SNOW MID",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "2883569": {
+    "name": "K-PASS SEAT AND SUPPORT TP/CO",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "1543904A": {
+    "name": "PRO-CC REAR SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0000037816": {
+    "name": "FT2 PASSENGER SEAT",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "5451043": {
+    "name": "LOW BLK WINDSHIELD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0112445": {
+    "name": "STANDARD COOLING SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114659-11": {
+    "name": "PRO-RIDE CHASSIS - BLACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114025": {
+    "name": "STANDARD FUEL SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114659-13": {
+    "name": "PRO-RIDE CHASSIS - RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0000037814": {
+    "name": "COBRA 1.6\u201d TRACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114026-11": {
+    "name": "STANDARD HOOD - BLACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "5451519": {
+    "name": "TALL SMOKE WINDSHIELD",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113307": {
+    "name": "STANDARD INTAKE SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113303-13": {
+    "name": "STANDARD NOSE & FENDER - RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113334": {
+    "name": "600 Cleanfire\u00ae ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "2687412A": {
+    "name": "BAR-MOUNTAIN, BASIC",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113306": {
+    "name": "STANDARD OIL SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0000037815": {
+    "name": "BACKCOUNTRY 1.75\u201d TRACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114032": {
+    "name": "STANDARD EXHAUST SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "2879194A-11": {
+    "name": "SNO HAND GUARDS - BLACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113336": {
+    "name": "700 LIBERTY ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0000037813": {
+    "name": "COBRA 1.35 TRACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0114021": {
+    "name": "STANDARD ELECTRICAL SYSTEM",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "117004_9570_6_800": {
+    "name": "REAR BUMPER/RACK/SADDLEBAGS",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0115331-13": {
+    "name": "AXYS CHASSIS - RED",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0002839191": {
+    "name": "ICE ATTAK 1.22",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "buy"
+  },
+  "0113303-11": {
+    "name": "STANDARD NOSE & FENDER - BLACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0115331-11": {
+    "name": "AXYS CHASSIS - BLACK",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113333": {
+    "name": "850 Patriot\u2122 ENGINE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0115686": {
+    "name": "INDY ADVENTURE FRONT SUSPENSION",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "0113313": {
+    "name": "STANDARD FRONT BUMPER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.StructureItems|com.ptc.Variant",
+    "source": "make"
+  },
+  "100 SNOW": {
+    "name": "SNOWMOBILE MASTER",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.SystemStructureItems|com.ptc.RootStructureItems|com.ptc.Snowmobile",
+    "source": "make"
+  },
+  "0000387": {
+    "name": "ENGINE CONTROL UNIT SOFTWARE",
+    "type": "WCTYPE|wt.part.WTPart|com.ptc.swlink.SoftwarePart",
+    "source": "make"
+  }
+}

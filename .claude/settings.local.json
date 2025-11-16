@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(python read_excel.py:*)",
+      "Bash(if [ -f requirements.txt ])",
+      "Bash(then cat requirements.txt)",
+      "Bash(else echo \"No requirements.txt found\")",
+      "Bash(fi)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(chmod:*)",
+      "Bash(curl:*)",
+      "Bash(./load_by_name.sh:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
