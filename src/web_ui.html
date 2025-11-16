@@ -189,6 +189,12 @@
             cursor: pointer;
             transition: all 0.3s;
             text-align: center;
+<<<<<<< Updated upstream
+=======
+            display: block;
+            position: relative;
+            user-select: none;
+>>>>>>> Stashed changes
         }
 
         .db-option:hover {
@@ -349,6 +355,7 @@
                         </select>
                     </div>
 
+<<<<<<< Updated upstream
                     <div class="checkbox-group">
                         <input type="checkbox" id="reuseBom">
                         <label for="reuseBom">
@@ -383,6 +390,9 @@
                             </span>
                         </label>
                     </div>
+=======
+                    <!-- BOM will be regenerated automatically from the selected Excel workbook -->
+>>>>>>> Stashed changes
                 </div>
 
                 <!-- Target Database Section -->
@@ -391,7 +401,11 @@
 
                     <div class="database-selector">
                         <label class="db-option" id="graphdbOption">
+<<<<<<< Updated upstream
                             <input type="checkbox" name="database" value="graphdb" checked>
+=======
+                            <input type="checkbox" name="database" value="graphdb">
+>>>>>>> Stashed changes
                             <div class="db-option-title">GraphDB</div>
                             <div class="db-option-url">localhost:7200</div>
                         </label>
@@ -430,6 +444,23 @@
                         </select>
                     </div>
 
+<<<<<<< Updated upstream
+=======
+                    <!-- Neo4j Credentials -->
+                    <div id="neo4jCredentialsGroup" style="margin-top: 20px; display: none;">
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" id="neo4jUsername" value="neo4j">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" id="neo4jPassword" value="testpwdpwd">
+                            </div>
+                        </div>
+                    </div>
+
+>>>>>>> Stashed changes
                 </div>
 
                 <!-- Advanced Options Section -->
@@ -448,6 +479,25 @@
                             <input type="number" id="batchSize" value="1000" min="1" max="10000">
                         </div>
 
+<<<<<<< Updated upstream
+=======
+                        <div class="form-group">
+                            <label>
+                                Log Level
+                                <span class="tooltip-icon">
+                                    ?
+                                    <span class="tooltip-text">Set the logging verbosity level. INFO shows progress and important messages. DEBUG shows detailed internal information.</span>
+                                </span>
+                            </label>
+                            <select id="logLevel">
+                                <option value="DEBUG">DEBUG</option>
+                                <option value="INFO" selected>INFO</option>
+                                <option value="WARNING">WARNING</option>
+                                <option value="ERROR">ERROR</option>
+                            </select>
+                        </div>
+
+>>>>>>> Stashed changes
                         <div class="checkbox-group">
                             <input type="checkbox" id="strictNames">
                             <label for="strictNames">
@@ -506,6 +556,15 @@
 
                 <!-- Status Panel -->
                 <div id="statusPanel" class="status-panel"></div>
+<<<<<<< Updated upstream
+=======
+
+                <!-- Log Output -->
+                <div id="logContainer" style="display: none; margin-top: 20px;">
+                    <div class="section-title">Import Logs</div>
+                    <pre id="logOutput" style="background: #f5f5f5; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 12px; max-height: 400px; overflow-y: auto; white-space: pre-wrap;"></pre>
+                </div>
+>>>>>>> Stashed changes
             </form>
         </div>
     </div>
@@ -515,6 +574,10 @@
 
         // Initialize UI
         document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< Updated upstream
+=======
+            loadSettings();
+>>>>>>> Stashed changes
             loadExcelFiles();
             loadBomFiles();
             loadGraphDBRepositories();
@@ -523,6 +586,7 @@
         });
 
         function setupEventListeners() {
+<<<<<<< Updated upstream
             // Database selector (checkboxes)
             document.querySelectorAll('.db-option').forEach(option => {
                 option.addEventListener('click', (e) => {
@@ -531,6 +595,28 @@
                         checkbox.checked = !checkbox.checked;
                     }
 
+=======
+            console.log('Setting up event listeners - v3');
+
+            // Database selector (checkboxes)
+            document.querySelectorAll('.db-option').forEach(option => {
+                const checkbox = option.querySelector('input[type="checkbox"]');
+                console.log('Found db-option:', option.id, 'checkbox:', checkbox);
+
+                // Handle clicks on the label (anywhere in the db-option)
+                option.addEventListener('click', (e) => {
+                    console.log('Clicked on:', option.id, 'target:', e.target.tagName);
+
+                    // Stop event propagation to prevent double-toggling
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Toggle the checkbox
+                    checkbox.checked = !checkbox.checked;
+                    console.log('Toggled checkbox to:', checkbox.checked);
+
+                    // Update UI
+>>>>>>> Stashed changes
                     updateDatabaseSelection();
                 });
             });
@@ -538,6 +624,7 @@
             // Mark initial selection
             updateDatabaseSelection();
 
+<<<<<<< Updated upstream
             // Reuse BOM checkbox handler
             document.getElementById('reuseBom').addEventListener('change', (e) => {
                 const bomFileGroup = document.getElementById('bomFileGroup');
@@ -547,6 +634,9 @@
                     bomFileGroup.style.display = 'none';
                 }
             });
+=======
+            // BOM is regenerated automatically – no reuse option
+>>>>>>> Stashed changes
 
             // Form submission
             document.getElementById('importForm').addEventListener('submit', handleImport);
@@ -576,9 +666,17 @@
             if (neo4jChecked) {
                 document.getElementById('neo4jOption').classList.add('selected');
                 document.getElementById('neo4jRepoGroup').style.display = 'block';
+<<<<<<< Updated upstream
             } else {
                 document.getElementById('neo4jOption').classList.remove('selected');
                 document.getElementById('neo4jRepoGroup').style.display = 'none';
+=======
+                document.getElementById('neo4jCredentialsGroup').style.display = 'block';
+            } else {
+                document.getElementById('neo4jOption').classList.remove('selected');
+                document.getElementById('neo4jRepoGroup').style.display = 'none';
+                document.getElementById('neo4jCredentialsGroup').style.display = 'none';
+>>>>>>> Stashed changes
             }
         }
 
@@ -670,6 +768,13 @@
                         option.textContent = repo.title || repo.name || repo.id;
                         select.appendChild(option);
                     });
+<<<<<<< Updated upstream
+=======
+                    // Preselect 'neo4j' if available
+                    if (repos.some(repo => (repo.id || repo.name) === 'neo4j')) {
+                        select.value = 'neo4j';
+                    }
+>>>>>>> Stashed changes
                 } else {
                     select.innerHTML = '<option value="">No Neo4j databases found</option>';
                     console.warn('No Neo4j databases found');
@@ -685,7 +790,10 @@
         async function handleImport(e) {
             e.preventDefault();
 
+<<<<<<< Updated upstream
             const reuseBom = document.getElementById('reuseBom').checked;
+=======
+>>>>>>> Stashed changes
             const graphdbChecked = document.getElementById('graphdbOption').querySelector('input').checked;
             const neo4jChecked = document.getElementById('neo4jOption').querySelector('input').checked;
 
@@ -715,17 +823,34 @@
 
             const formData = {
                 excelFile: document.getElementById('excelFile').value,
+<<<<<<< Updated upstream
                 bomFile: reuseBom ? (document.getElementById('bomFile').value || null) : null,
                 reuseBom: reuseBom,
                 bomByName: document.getElementById('bomByName').checked,
                 databases: databases,
                 batchSize: parseInt(document.getElementById('batchSize').value),
+=======
+                bomFile: null,
+                reuseBom: false,
+                bomByName: true,
+                databases: databases,
+                batchSize: parseInt(document.getElementById('batchSize').value),
+                logLevel: document.getElementById('logLevel').value,
+                neo4jUsername: document.getElementById('neo4jUsername').value,
+                neo4jPassword: document.getElementById('neo4jPassword').value,
+>>>>>>> Stashed changes
                 strictNames: document.getElementById('strictNames').checked,
                 debugNames: document.getElementById('debugNames').checked,
                 addEdgeLabels: document.getElementById('addEdgeLabels').checked,
                 dryRun: document.getElementById('dryRun').checked
             };
 
+<<<<<<< Updated upstream
+=======
+            // Save current settings to localStorage
+            saveSettings(formData);
+
+>>>>>>> Stashed changes
             const importBtn = document.getElementById('importBtn');
             const originalText = importBtn.textContent;
             importBtn.disabled = true;
@@ -745,10 +870,29 @@
                 const result = await response.json();
 
                 if (response.ok) {
+<<<<<<< Updated upstream
                     showStatus(result.message || 'Import completed successfully!', 'success');
                 } else {
                     showStatus(result.error || 'Import failed', 'error');
                 }
+=======
+                    showStatus(result.message || 'Import completed successfully! <a href="#" onclick="toggleLogs(); return false;">View Logs</a>', 'success');
+                } else {
+                    showStatus((result.error || 'Import failed') + ' <a href="#" onclick="toggleLogs(); return false;">View Logs</a>', 'error');
+                }
+
+                // Display logs
+                const logOutput = document.getElementById('logOutput');
+                let logText = '';
+                if (result.results) {
+                    result.results.forEach(r => {
+                        if (r.output) logText += r.output + '\n';
+                        if (r.error) logText += 'ERROR: ' + r.error + '\n';
+                    });
+                }
+                logOutput.textContent = logText;
+                document.getElementById('logContainer').style.display = 'block';
+>>>>>>> Stashed changes
             } catch (error) {
                 showStatus('Error: ' + error.message, 'error');
             } finally {
@@ -760,7 +904,67 @@
         function showStatus(message, type) {
             const panel = document.getElementById('statusPanel');
             panel.className = `status-panel ${type} show`;
+<<<<<<< Updated upstream
             panel.textContent = message;
+=======
+            panel.innerHTML = message;
+        }
+
+        function toggleLogs() {
+            const container = document.getElementById('logContainer');
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function saveSettings(settings) {
+            try {
+                localStorage.setItem('windchillImportSettings', JSON.stringify(settings));
+            } catch (e) {
+                console.warn('Failed to save settings to localStorage:', e);
+            }
+        }
+
+        function loadSettings() {
+            try {
+                const saved = localStorage.getItem('windchillImportSettings');
+                if (saved) {
+                    const settings = JSON.parse(saved);
+
+                    // Restore form values
+                    if (settings.excelFile) document.getElementById('excelFile').value = settings.excelFile;
+                    // BOM settings removed – always regenerated as name-based
+                    if (settings.batchSize) document.getElementById('batchSize').value = settings.batchSize;
+                    if (settings.logLevel) document.getElementById('logLevel').value = settings.logLevel;
+                    if (settings.neo4jUsername) document.getElementById('neo4jUsername').value = settings.neo4jUsername;
+                    if (settings.neo4jPassword) document.getElementById('neo4jPassword').value = settings.neo4jPassword;
+                    if (settings.strictNames !== undefined) document.getElementById('strictNames').checked = settings.strictNames;
+                    if (settings.debugNames !== undefined) document.getElementById('debugNames').checked = settings.debugNames;
+                    if (settings.addEdgeLabels !== undefined) document.getElementById('addEdgeLabels').checked = settings.addEdgeLabels;
+                    if (settings.dryRun !== undefined) document.getElementById('dryRun').checked = settings.dryRun;
+
+                    // Restore database selection
+                    if (settings.databases && settings.databases.length > 0) {
+                        settings.databases.forEach(db => {
+                            if (db.type === 'graphdb') {
+                                document.getElementById('graphdbOption').querySelector('input').checked = true;
+                                if (db.repository) document.getElementById('graphdbRepository').value = db.repository;
+                            } else if (db.type === 'neo4j') {
+                                document.getElementById('neo4jOption').querySelector('input').checked = true;
+                                if (db.repository) document.getElementById('neo4jRepository').value = db.repository;
+                            }
+                        });
+                        updateDatabaseSelection();
+                    } else {
+                        // Default to Neo4j if no previous selection
+                        document.getElementById('neo4jOption').querySelector('input').checked = true;
+                        updateDatabaseSelection();
+                    }
+
+                    // No reuse option – nothing to toggle
+                }
+            } catch (e) {
+                console.warn('Failed to load settings from localStorage:', e);
+            }
+>>>>>>> Stashed changes
         }
     </script>
 </body>

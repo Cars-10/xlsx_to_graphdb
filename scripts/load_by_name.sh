@@ -12,7 +12,7 @@ STRICT_NAMES="${STRICT_NAMES:-}"
 FORCE_GENERATE="${FORCE_GENERATE_BOM_BY_NAME:-}"
 DEBUG_NAMES="${DEBUG_NAMES:-}"
 SKIP_LOG="${SKIP_LOG:-data/skipped_names.log}"
-ARGS=(src/spreadsheet_loader.py --excel "$EXCEL" --url "$URL" --repo "$REPO" --bom-by-name --add-edge-labels --debug-names --quiet-missing-sheets)
+ARGS=(src/spreadsheet_loader.py --excel "$EXCEL" --url "$URL" --repo "$REPO" --add-edge-labels --debug-names --quiet-missing-sheets)
 regen_needed=0
 if [ -n "$FORCE_GENERATE" ]; then regen_needed=1; fi
 if [ -f "$BOM" ]; then

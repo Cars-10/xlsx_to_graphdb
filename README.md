@@ -46,12 +46,40 @@ The easiest way to use this tool is through the web interface:
    - Click "Start Import"
 
 ### Option 2: Command Line
+<<<<<<< Updated upstream
 - Load by names (with auto-generation if needed):
   - `bash scripts/load_by_name.sh`
 - Load by numbers (reliable, still shows names in the UI):
   - `python src/spreadsheet_loader.py --excel data/Snowmobile.xlsx --bom data/bom.csv --url http://127.0.0.1:7200 --repo Snowmobile --quiet-missing-sheets`
 - Enable debugging outputs:
   - `DEBUG_NAMES=1 bash scripts/load_by_name.sh`
+=======
+
+**GraphDB:**
+```bash
+python src/spreadsheet_loader.py \
+  --excel data/Snowmobile.xlsx \
+  --bom data/bom.csv \
+  --url http://127.0.0.1:7200 \
+  --repo Snowmobile \
+  --quiet-missing-sheets
+```
+
+**Neo4j (with stunning visualizations):**
+```bash
+export NEO4J_PASSWORD=tstpwdpwd
+python neo4j_importer.py \
+  --excel Snowmobile.xlsx \
+  --bom bom.csv \
+  --uri bolt://localhost:7687 \
+  --user neo4j \
+  --quiet-missing-sheets
+```
+
+**Advanced options:**
+- Load by names: `bash scripts/load_by_name.sh`
+- Enable debugging: `DEBUG_NAMES=1 bash scripts/load_by_name.sh`
+>>>>>>> Stashed changes
 
 ## Key Behaviors
 - Nodes are parts with URIs `urn:part:{number}` and labels set to the part name.
@@ -102,4 +130,9 @@ The easiest way to use this tool is through the web interface:
 
 ## Supported Databases
 - **GraphDB** (http://localhost:7200) - RDF triple store with SPARQL support
+<<<<<<< Updated upstream
 - **Neo4j** (http://localhost:7474) - Property graph database (coming soon)
+=======
+- **Neo4j** (bolt://localhost:7687) - Property graph database with stunning visualizations
+  - See [Neo4j Visualization Guide](docs/NEO4J_VISUALIZATION.md) for tips on creating beautiful graph visualizations
+>>>>>>> Stashed changes
