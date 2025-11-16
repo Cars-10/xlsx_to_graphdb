@@ -555,6 +555,7 @@ def import_data(
     debug_names: bool = False,
     resolution_report: Optional[str] = None,
     skip_log: Optional[str] = None,
+    add_edge_labels: bool = False,
 ) -> Tuple[int, int]:
     parser = SpreadsheetParser(excel_path, warn_missing_required=not quiet_missing_sheets)
     parts = parser.parse_parts(sheets)
@@ -666,6 +667,23 @@ def import_data(
             raise RuntimeError("GraphDB connection verification failed")
 
     posted = 0
+
+    if add_edge_labels:
+        g_labels = Graph()
+        g_labels.add((URIRef("urn:ontology:hasComponent"), RDFS.label, Literal("hasComponent")))
+        g_labels.add((URIRef("urn:ontology:usedIn"), RDFS.label, Literal("usedIn")))
+        g_labels.add((URIRef("urn:ontology:partOfAssembly"), RDFS.label, Literal("partOfAssembly")))
+        g_labels.add((URIRef("urn:ontology:hasAlternate"), RDFS.label, Literal("hasAlternate")))
+        label_bytes = g_labels.serialize(format="ntriples", encoding="utf-8")
+        if dry_run:
+            logging.info("Dry run: would post edge label chunk of size %d bytes", len(label_bytes))
+        else:
+            ok = client.post_ntriples(label_bytes)
+            if not ok:
+                raise RuntimeError("Failed to post edge label chunk to GraphDB")
+        posted += 1
+        logging.info("Posted chunk %d", posted)
+
     all_triples = (part_triples + bom_triples + used_in_triples +
                    part_of_assembly_triples + alternate_triples)
     for chunk in batch_serialize(all_triples, batch_size=batch_size):
@@ -701,6 +719,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--dump-name-index", default=None, help="CSV path to write the number→name index dump")
     parser.add_argument("--emit-bom-name-candidates", default=None, help="CSV path to write BOM name candidates generated from number-based BOM")
     parser.add_argument("--skip-log", default=None, help="Write skipped name-based edges to a log file")
+    parser.add_argument("--add-edge-labels", action="store_true", help="Add rdfs:label to predicates for readable relationship labels")
     parser.add_argument("--log-level", default="INFO", help="Logging level (DEBUG, INFO, WARNING, ERROR)")
     parser.add_argument("--quiet-missing-sheets", action="store_true", help="Suppress warnings for sheets missing required columns")
     args = parser.parse_args(argv)
@@ -738,6 +757,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             debug_names=args.debug_names,
             resolution_report=args.resolution_report,
             skip_log=args.skip_log,
+            add_edge_labels=args.add_edge_labels,
         )
         logging.info("Import complete: %d triples in %d chunks", total, chunks)
         return 0
