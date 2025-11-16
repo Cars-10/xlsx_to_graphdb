@@ -1,4 +1,4 @@
-# Spreadsheet → GraphDB Importer
+# Windchill XLSX to Knowledge Graph
 
 ## Why Use This Tool
 - Load Windchill-style parts and BOM data from Excel workbooks into a graph database quickly and repeatably.
