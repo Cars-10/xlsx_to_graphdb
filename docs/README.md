@@ -20,6 +20,14 @@
 - Suppress noisy Excel style warnings and track progress clearly.
 
 ## Quick Start
+
+### Web UI (Recommended)
+```bash
+bash scripts/start_web_ui.sh
+```
+Then open http://localhost:5050 in your browser.
+
+### Command Line
 - Load by names (with auto-generation if needed):
   - `bash scripts/load_by_name.sh`
 - Load by numbers (reliable, still shows names in the UI):

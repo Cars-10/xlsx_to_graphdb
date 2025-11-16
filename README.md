@@ -20,6 +20,32 @@
 - Suppress noisy Excel style warnings and track progress clearly.
 
 ## Quick Start
+
+### Option 1: Web UI (Recommended)
+The easiest way to use this tool is through the web interface:
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Start the web server:**
+   ```bash
+   python src/web_server.py
+   ```
+
+3. **Open your browser:**
+   Navigate to `http://localhost:5050`
+
+4. **Use the interface:**
+   - Select your Excel file from the dropdown
+   - Choose your BOM file (optional)
+   - Select target database (GraphDB or Neo4j)
+   - Pick a repository/database
+   - Configure advanced options with helpful tooltips
+   - Click "Start Import"
+
+### Option 2: Command Line
 - Load by names (with auto-generation if needed):
   - `bash scripts/load_by_name.sh`
 - Load by numbers (reliable, still shows names in the UI):
@@ -63,10 +89,17 @@
 ```
 .
 ├── src/                          # Source code
-│   └── spreadsheet_loader.py    # Main importer module
+│   ├── spreadsheet_loader.py    # Main importer module
+│   ├── web_server.py            # Flask web server
+│   └── web_ui.html              # Web interface
 ├── scripts/                      # Utility scripts
 │   └── load_by_name.sh          # Automated import script
 ├── data/                         # Data files (Excel, CSV, reports)
 ├── docs/                         # Documentation
-└── tests/                        # Unit tests
+├── tests/                        # Unit tests
+└── requirements.txt              # Python dependencies
 ```
+
+## Supported Databases
+- **GraphDB** (http://localhost:7200) - RDF triple store with SPARQL support
+- **Neo4j** (http://localhost:7474) - Property graph database (coming soon)
