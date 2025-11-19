@@ -21,7 +21,8 @@ class EnhancedWindchillMCPClient:
         self.session = requests.Session()
         self.session.headers.update({
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Origin': 'http://localhost:4200'
         })
     
     def test_connection(self) -> bool:
@@ -39,50 +40,59 @@ class EnhancedWindchillMCPClient:
             logger.error(f"Failed to connect to MCP server: {e}")
             return False
     
-    def call_tool(self, tool_name: str, arguments: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Call a specific MCP tool with proper protocol."""
+    def _post_json(self, path: str, payload: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         try:
-            # MCP protocol format
-            payload = {
+            resp = self.session.post(urljoin(self.base_url, path), json=payload)
+            if resp.status_code == 200:
+                try:
+                    return resp.json()
+                except Exception:
+                    return None
+            return None
+        except Exception:
+            return None
+
+    def call_tool(self, tool_name: str, arguments: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        try:
+            rpc_payload = {
                 "jsonrpc": "2.0",
                 "method": "tools/call",
-                "params": {
-                    "name": tool_name,
-                    "arguments": arguments
-                },
+                "params": {"name": tool_name, "arguments": arguments},
                 "id": 1
             }
-            
-            response = self.session.post(
-                urljoin(self.base_url, "/message"),
-                json=payload
-            )
-            
-            logger.info(f"Tool {tool_name} response: {response.status_code}")
-            
-            if response.status_code == 200:
-                result = response.json()
-                if 'result' in result:
-                    return result['result']
-                elif 'error' in result:
-                    logger.error(f"Tool error: {result['error']}")
-                    return None
-                else:
+            candidates = [
+                ("rpc", "/message", rpc_payload),
+                ("rpc", "/api/message", rpc_payload),
+                ("rest", "/tools/call", {"name": tool_name, "arguments": arguments}),
+                ("rest", "/api/tools/call", {"name": tool_name, "arguments": arguments}),
+                ("rest", f"/tools/{tool_name}", arguments),
+                ("rest", f"/api/tools/{tool_name}", arguments),
+                ("rest", f"/tools/{tool_name}/call", arguments),
+                ("rest", f"/api/tools/{tool_name}/call", arguments),
+            ]
+            for kind, path, payload in candidates:
+                result = self._post_json(path, payload)
+                if not result:
+                    continue
+                if kind == "rpc":
+                    if isinstance(result, dict):
+                        if 'result' in result:
+                            return result['result']
+                        if 'error' in result:
+                            continue
                     return result
-            else:
-                logger.warning(f"Tool call failed: {response.status_code}")
-                return None
+                return result
+            return None
         except Exception as e:
             logger.error(f"Error calling tool {tool_name}: {e}")
             return None
     
     def search_parts(self, search_term: str, limit: int = 100) -> List[Dict[str, Any]]:
         """Search for parts in Windchill using proper MCP protocol."""
-        result = self.call_tool("partmgmt_search_parts", {
-            "query": search_term,
+        result = self.call_tool("part_search", {
+            "name": f"*{search_term}*",
             "limit": limit
         })
-        
         if result:
             parts = result.get('results', [])
             logger.info(f"Found {len(parts)} parts for search term '{search_term}'")
@@ -91,93 +101,140 @@ class EnhancedWindchillMCPClient:
     
     def get_part_details(self, part_number: str) -> Optional[Dict[str, Any]]:
         """Get detailed information about a specific part."""
-        # First search to get the part OID
-        search_result = self.call_tool("partmgmt_search_parts", {
-            "query": part_number,
+        search_result = self.call_tool("part_search", {
+            "number": part_number,
             "limit": 1
         })
-        
         if search_result and search_result.get('results'):
-            part_oid = search_result['results'][0].get('oid')
-            if part_oid:
-                result = self.call_tool("partmgmt_get_part", {
-                    "partId": part_oid,
-                    "expand": "Number,Name,State,Version,Iteration,Container,Creator,CreateDate,Modifier,ModifyDate"
+            part_id = (
+                search_result['results'][0].get('id')
+                or search_result['results'][0].get('oid')
+            )
+            if part_id:
+                result = self.call_tool("part_get", {
+                    "id": part_id
                 })
                 if result:
                     logger.info(f"Retrieved details for part {part_number}")
                     return result
-        
         logger.warning(f"Failed to get details for part {part_number}")
         return None
     
     def get_part_changes(self, part_number: str) -> List[Dict[str, Any]]:
-        """Get change information for a specific part."""
-        changes = []
-        
-        # Search for change objects related to this part
-        change_result = self.call_tool("changemgmt_search_change_objects", {
-            "query": part_number,
-            "limit": 50
-        })
-        
-        if change_result and change_result.get('results'):
-            for change in change_result['results']:
-                change_oid = change.get('oid')
-                if change_oid:
-                    # Get detailed change information
-                    change_detail = self.call_tool("changemgmt_get_change_object", {
-                        "changeId": change_oid,
-                        "expand": "Number,Name,State,CreateDate,Creator,Description,Priority,NeedDate,AffectedObjects"
-                    })
-                    if change_detail:
-                        changes.append(change_detail)
-        
+        """Get change information for a specific part by scanning changes and filtering by affected objects."""
+        changes: List[Dict[str, Any]] = []
+        search = self.call_tool("change_search", {"limit": 200}) or self.call_tool("changemgmt_list_change_objects", {"limit": 200})
+        change_results = (search or {}).get('results', [])
+        for ch in change_results:
+            ch_id = ch.get('id') or ch.get('oid')
+            if not ch_id:
+                continue
+            detail = self.call_tool("change_get", {"id": ch_id}) or self.call_tool("changemgmt_get_change_object", {"changeId": ch_id}) or {}
+            affected = self.call_tool("change_get_affected_objects", {"changeId": ch_id}) or self.call_tool("changemgmt_get_change_affected_objects", {"changeId": ch_id}) or {}
+            affected_list = affected.get('results', []) if isinstance(affected, dict) else []
+            if any((ao.get('Number') == part_number) or (ao.get('number') == part_number) for ao in affected_list):
+                d = detail if isinstance(detail, dict) else {}
+                if affected_list:
+                    d['AffectedObjects'] = affected_list
+                changes.append(d)
         logger.info(f"Found {len(changes)} changes for part {part_number}")
         return changes
     
     def get_bom_structure(self, part_number: str, depth: int = 3) -> Optional[Dict[str, Any]]:
         """Get BOM structure for a specific part."""
-        # First search to get the part OID
-        search_result = self.call_tool("partmgmt_search_parts", {
-            "query": part_number,
+        search_result = self.call_tool("part_search", {
+            "number": part_number,
             "limit": 1
         })
-        
         if search_result and search_result.get('results'):
-            part_oid = search_result['results'][0].get('oid')
-            if part_oid:
-                result = self.call_tool("partmgmt_get_part_structure", {
-                    "partId": part_oid,
-                    "depth": depth,
-                    "viewName": "Design"
+            part_id = (
+                search_result['results'][0].get('id')
+                or search_result['results'][0].get('oid')
+            )
+            if part_id:
+                result = self.call_tool("part_get_structure", {
+                    "id": part_id,
+                    "levels": depth,
+                    "expandPart": True,
+                    "selectFields": "Identity,Name,Number"
                 })
                 if result:
                     logger.info(f"Retrieved BOM structure for part {part_number}")
                     return result
-        
         logger.warning(f"Failed to get BOM structure for part {part_number}")
         return None
     
     def get_all_change_objects(self, limit: int = 1000) -> List[Dict[str, Any]]:
         """Get all change objects from Windchill."""
-        result = self.call_tool("changemgmt_list_change_objects", {
-            "limit": limit,
-            "select": "Number,Name,State,CreateDate,Creator,Description,Priority,NeedDate"
-        })
-        
+        result = self.call_tool("change_search", {"limit": limit}) or self.call_tool("changemgmt_list_change_objects", {"limit": limit})
+        changes: List[Dict[str, Any]] = []
         if result:
-            changes = result.get('results', [])
-            logger.info(f"Found {len(changes)} total change objects")
-            return changes
+            if isinstance(result, dict) and 'value' in result:
+                changes.extend(result.get('value', []))
+            else:
+                changes.extend(result.get('results', []))
+        dr = self.call_tool("change_search_by_date_range", {
+            "startDate": "2000-01-01T00:00:00Z",
+            "endDate": "2100-01-01T00:00:00Z",
+            "dateField": "CreatedOn",
+            "limit": limit
+        })
+        if dr:
+            if isinstance(dr, dict) and 'value' in dr:
+                changes.extend(dr.get('value', []))
+            else:
+                changes.extend(dr.get('results', []))
+        seen = set()
+        deduped: List[Dict[str, Any]] = []
+        for ch in changes:
+            key = ch.get('ID') or ch.get('VersionID') or ch.get('Number')
+            if not key:
+                continue
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(ch)
+        logger.info(f"Found {len(deduped)} total change objects")
+        return deduped
         return []
+
+    def get_all_change_objects_paged(self, years: List[int], limit_per_window: int = 200) -> List[Dict[str, Any]]:
+        out: List[Dict[str, Any]] = []
+        for y in years:
+            for m in range(1, 13):
+                sd = f"{y:04d}-{m:02d}-01T00:00:00Z"
+                if m == 12:
+                    ed = f"{y+1:04d}-01-01T00:00:00Z"
+                else:
+                    ed = f"{y:04d}-{m+1:02d}-01T00:00:00Z"
+                res = self.call_tool("change_search_by_date_range", {
+                    "startDate": sd,
+                    "endDate": ed,
+                    "dateField": "CreatedOn",
+                    "limit": limit_per_window
+                })
+                if not res:
+                    continue
+                if isinstance(res, dict) and 'value' in res:
+                    out.extend(res.get('value', []))
+                else:
+                    out.extend(res.get('results', []))
+        seen = set()
+        deduped: List[Dict[str, Any]] = []
+        for ch in out:
+            key = ch.get('ID') or ch.get('VersionID') or ch.get('Number')
+            if not key:
+                continue
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(ch)
+        logger.info(f"Found {len(deduped)} total change objects via paging")
+        return deduped
     
     def get_change_affected_objects(self, change_id: str) -> List[Dict[str, Any]]:
         """Get objects affected by a specific change."""
-        result = self.call_tool("changemgmt_get_change_affected_objects", {
-            "changeId": change_id
-        })
-        
+        result = self.call_tool("change_get_affected_objects", {"changeId": change_id}) or self.call_tool("changemgmt_get_change_affected_objects", {"changeId": change_id})
         if result:
             affected_objects = result.get('results', [])
             logger.info(f"Found {len(affected_objects)} objects affected by change {change_id}")

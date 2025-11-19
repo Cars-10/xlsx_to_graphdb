@@ -40,8 +40,8 @@ class SnowmobileGraphVerifier:
         logger.info("=== BASIC COUNTS VERIFICATION ===")
         
         queries = {
-            "Total Parts": "MATCH (p:SnowmobilePart) RETURN count(p) as count",
-            "Total Changes": "MATCH (c:SnowmobileChange) RETURN count(c) as count",
+            "Total Parts": "MATCH (p:WTPart) RETURN count(p) as count",
+            "Total Changes": "MATCH (c:Change) RETURN count(c) as count",
             "Total BOM Relationships": "MATCH ()-[r:HAS_COMPONENT]->() RETURN count(r) as count",
             "Total Change Relationships": "MATCH ()-[r:AFFECTS_PART]->() RETURN count(r) as count",
             "Total SUPERSEDES Relationships": "MATCH ()-[r:SUPERSEDES]->() RETURN count(r) as count",
@@ -64,7 +64,7 @@ class SnowmobileGraphVerifier:
         logger.info("\n=== CHANGE TYPES ANALYSIS ===")
         
         query = """
-        MATCH (c:SnowmobileChange)
+        MATCH (c:Change)
         RETURN c.type as change_type, count(c) as count
         ORDER BY count DESC
         """
@@ -80,7 +80,7 @@ class SnowmobileGraphVerifier:
         logger.info("\n=== CHANGE STATES ANALYSIS ===")
         
         query = """
-        MATCH (c:SnowmobileChange)
+        MATCH (c:Change)
         RETURN c.state as state, count(c) as count
         ORDER BY count DESC
         """
@@ -96,7 +96,7 @@ class SnowmobileGraphVerifier:
         logger.info("\n=== PART CATEGORIES ANALYSIS ===")
         
         query = """
-        MATCH (p:SnowmobilePart)
+        MATCH (p:WTPart)
         RETURN p.type as part_type, count(p) as count
         ORDER BY count DESC
         LIMIT 20
@@ -114,7 +114,7 @@ class SnowmobileGraphVerifier:
         
         # Parts with multiple changes
         query1 = """
-        MATCH (p:SnowmobilePart)<-[r:AFFECTS_PART]-(c:SnowmobileChange)
+        MATCH (p:WTPart)<-[r:AFFECTS_PART]-(c:Change)
         WITH p, count(r) as change_count
         WHERE change_count > 1
         RETURN p.number as part_number, p.name as part_name, change_count
@@ -129,7 +129,7 @@ class SnowmobileGraphVerifier:
         
         # Changes affecting multiple parts
         query2 = """
-        MATCH (c:SnowmobileChange)-[r:AFFECTS_PART]->(p:SnowmobilePart)
+        MATCH (c:Change)-[r:AFFECTS_PART]->(p:WTPart)
         WITH c, count(r) as part_count
         WHERE part_count > 1
         RETURN c.number as change_number, c.type as change_type, part_count
@@ -144,7 +144,7 @@ class SnowmobileGraphVerifier:
         
         # Part supersession chains
         query3 = """
-        MATCH path = (p1:SnowmobilePart)-[:SUPERSEDES*1..5]->(p2:SnowmobilePart)
+        MATCH path = (p1:WTPart)-[:SUPERSEDES*1..5]->(p2:WTPart)
         WITH path, length(path) as chain_length
         WHERE chain_length >= 2
         RETURN 
@@ -171,7 +171,7 @@ class SnowmobileGraphVerifier:
         
         # Changes with dependencies
         query1 = """
-        MATCH (c:SnowmobileChange)
+        MATCH (c:Change)
         WHERE (c)-[:DEPENDS_ON]-() OR (c)-[:RELATED_TO]-()
         RETURN c.number as change_number, c.type as change_type, c.state as state
         ORDER BY c.number
@@ -182,7 +182,7 @@ class SnowmobileGraphVerifier:
         
         # Dependency chains
         query2 = """
-        MATCH path = (c1:SnowmobileChange)-[:DEPENDS_ON*1..3]->(c2:SnowmobileChange)
+        MATCH path = (c1:Change)-[:DEPENDS_ON*1..3]->(c2:Change)
         WITH path, length(path) as chain_length
         WHERE chain_length >= 2
         RETURN 
@@ -208,7 +208,7 @@ class SnowmobileGraphVerifier:
         
         # Top-level assemblies
         query1 = """
-        MATCH (parent:SnowmobilePart)-[r:HAS_COMPONENT]->(child:SnowmobilePart)
+        MATCH (parent:WTPart)-[r:HAS_COMPONENT]->(child:WTPart)
         WHERE NOT ()-[:HAS_COMPONENT]->(parent)
         RETURN parent.number as assembly_number, parent.name as assembly_name, count(r) as component_count
         ORDER BY component_count DESC
@@ -222,7 +222,7 @@ class SnowmobileGraphVerifier:
         
         # Deep BOM structures
         query2 = """
-        MATCH path = (root:SnowmobilePart)-[:HAS_COMPONENT*1..4]->(leaf:SnowmobilePart)
+        MATCH path = (root:WTPart)-[:HAS_COMPONENT*1..4]->(leaf:WTPart)
         WHERE NOT ()-[:HAS_COMPONENT]->(root) AND NOT (leaf)-[:HAS_COMPONENT]->()
         WITH root, length(path) as depth
         RETURN root.number as root_part, max(depth) as max_depth
@@ -288,7 +288,10 @@ class SnowmobileGraphVerifier:
         }
         
         # Save report to file
-        report_file = '../../data/processed/snowmobile_graph_verification_report.json'
+        from pathlib import Path
+        out_dir = Path('data/processed')
+        out_dir.mkdir(parents=True, exist_ok=True)
+        report_file = out_dir / 'snowmobile_graph_verification_report.json'
         with open(report_file, 'w') as f:
             json.dump(report, f, indent=2, default=str)
         

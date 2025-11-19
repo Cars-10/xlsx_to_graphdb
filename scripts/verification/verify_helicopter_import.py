@@ -7,6 +7,7 @@ import requests
 import json
 import pandas as pd
 from pathlib import Path
+from datetime import datetime
 
 def query_neo4j(cypher_query: str) -> dict:
     """Execute a Cypher query against Neo4j"""
@@ -63,7 +64,7 @@ def verify_helicopter_import():
     # 3. Change information
     print("\n3. CHANGE INFORMATION:")
     
-    change_records = query_neo4j("MATCH (c:ChangeRecord) RETURN count(c) as count")
+    change_records = query_neo4j("MATCH (c:Change) RETURN count(c) as count")
     print(f"Change records: {change_records[0]['row'][0] if change_records else 'N/A'}")
     
     parts_with_changes = query_neo4j("""
@@ -100,6 +101,61 @@ def verify_helicopter_import():
     
     change_affects = query_neo4j("MATCH ()-[r:AFFECTS_PART]->() RETURN count(r) as count")
     print(f"Change affects relationships: {change_affects[0]['row'][0] if change_affects else 'N/A'}")
+
+    heli_parts = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' RETURN count(p) as count")
+    heli_bom = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' WITH collect(p) AS ps MATCH (p)-[r:HAS_COMPONENT]->(c) WHERE p IN ps AND c IN ps RETURN count(r) as count")
+    heli_docs = query_neo4j("MATCH (d:Document)-[r:DESCRIBES]->(p:WTPart) WHERE toLower(coalesce(d.container,''))='helicopter' AND toLower(coalesce(p.container,''))='helicopter' RETURN count(r) as count")
+    heli_changes = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' MATCH (c:Change)-[:AFFECTS_PART]->(p) RETURN count(DISTINCT c) as count")
+    heli_change_rels = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' MATCH (:Change)-[r:AFFECTS_PART]->(p) RETURN count(r) as count")
+    heli_changes_by_source_rows = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' MATCH (c:Change)-[:AFFECTS_PART]->(p) RETURN coalesce(c.source,'unknown') AS source, count(DISTINCT c) as count")
+    changes_by_source = {}
+    for row in heli_changes_by_source_rows or []:
+        src = row['row'][0]
+        cnt = row['row'][1]
+        changes_by_source[src] = cnt
+    heli_changes_by_label_rows = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' MATCH (c:Change)-[:AFFECTS_PART]->(p) RETURN [label IN labels(c) WHERE label <> 'Change'][0] AS label, count(DISTINCT c) as count")
+    changes_by_label = {}
+    for row in heli_changes_by_label_rows or []:
+        lbl = row['row'][0] or 'Change'
+        cnt = row['row'][1]
+        changes_by_label[lbl] = cnt
+    heli_changes_by_color_rows = query_neo4j("MATCH (p:WTPart) WHERE toLower(coalesce(p.container,''))='helicopter' MATCH (c:Change)-[:AFFECTS_PART]->(p) RETURN coalesce(c.color,'none') AS color, count(DISTINCT c) as count")
+    changes_by_color = {}
+    for row in heli_changes_by_color_rows or []:
+        col = row['row'][0] or 'none'
+        cnt = row['row'][1]
+        changes_by_color[col] = cnt
+
+    report = {
+        "timestamp": datetime.now().isoformat(),
+        "summary": {
+            "container": "Helicopter",
+            "total_parts": heli_parts[0]['row'][0] if heli_parts else 0,
+            "bom_relationships": heli_bom[0]['row'][0] if heli_bom else 0,
+            "describe_links": heli_docs[0]['row'][0] if heli_docs else 0,
+            "changes": heli_changes[0]['row'][0] if heli_changes else 0,
+            "change_relationships": heli_change_rels[0]['row'][0] if heli_change_rels else 0,
+            "changes_by_source": changes_by_source,
+            "changes_by_label": changes_by_label,
+            "changes_by_color": changes_by_color,
+        },
+    }
+
+    out = Path('data/processed/helicopter_graph_verification_report.json')
+    out.parent.mkdir(exist_ok=True)
+    with open(out, 'w') as f:
+        json.dump(report, f, indent=2)
+    print(f"Saved report to {out}")
+
+    print("\nChanges by source:")
+    for src, cnt in changes_by_source.items():
+        print(f"  {src}: {cnt}")
+    print("\nChanges by label:")
+    for lbl, cnt in changes_by_label.items():
+        print(f"  {lbl}: {cnt}")
+    print("\nChanges by color:")
+    for col, cnt in changes_by_color.items():
+        print(f"  {col}: {cnt}")
     
     # 7. Assembly structure
     print("\n7. ASSEMBLY STRUCTURE:")

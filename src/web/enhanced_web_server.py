@@ -16,15 +16,14 @@ from typing import Dict, Any, Optional, Tuple
 from flask import Flask, request, jsonify, send_from_directory, make_response
 from flask_cors import CORS
 
-# Add src directory to path for importing modules
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from validation import FileValidator, DatabaseValidator, ConfigurationValidator
-from exceptions import (
+from core.validation import FileValidator, DatabaseValidator, ConfigurationValidator
+from core.exceptions import (
     ValidationError, FileValidationError, DatabaseConnectionError,
     NetworkError, ConfigurationError, WindchillImporterError
 )
-from logging_config import setup_logging, get_logger, log_operation_start, log_operation_end
+from core.logging_config import setup_logging, get_logger, log_operation_start, log_operation_end
 
 # Setup logging
 setup_logging(level='INFO', include_console=True)
@@ -36,8 +35,7 @@ CORS(app)  # Enable CORS for development
 # Disable caching for development
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-# Get project root directory
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / 'data'
 SCRIPTS_DIR = PROJECT_ROOT / 'scripts'
 
@@ -499,12 +497,23 @@ def _run_neo4j_import(excel_path: Path, db_config: Dict[str, Any], batch_size: i
         
         # Build command
         cmd = [
-            sys.executable, 'neo4j_importer.py',
+            sys.executable, '-m', 'src.importers.neo4j_importer',
             '--excel', str(excel_path),
             '--uri', validated_uri,
             '--user', user,
             '--batch-size', str(batch_size)
         ]
+
+        container = db_config.get('container')
+        if container:
+            cmd.extend(['--container', container])
+
+        if db_config.get('withChanges'):
+            cmd.append('--with-changes')
+
+        mcp_url = db_config.get('mcpUrl')
+        if mcp_url:
+            cmd.extend(['--mcp-url', mcp_url])
         
         if password:
             cmd.extend(['--password', password])
