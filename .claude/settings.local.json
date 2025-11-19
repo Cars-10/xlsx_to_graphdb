@@ -16,7 +16,14 @@
       "Bash(mkdir:*)",
       "Bash(git mv:*)",
       "Bash(mv:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(tree:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(if [ -d venv ])",
+      "Bash(then source venv/bin/activate)",
+      "Bash(else python3 src/web_server.py)",
+      "Bash(xargs kill:*)"
     ],
     "deny": [],
     "ask": []

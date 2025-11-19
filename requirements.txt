@@ -3,12 +3,9 @@ pandas>=2.0.0
 openpyxl>=3.1.0
 rdflib>=7.0.0
 
-<<<<<<< Updated upstream
-=======
 # Database drivers
 neo4j>=5.0.0
 
->>>>>>> Stashed changes
 # Web UI dependencies
 flask>=3.0.0
 flask-cors>=4.0.0

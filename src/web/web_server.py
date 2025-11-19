@@ -11,11 +11,7 @@ import subprocess
 from pathlib import Path
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
-<<<<<<< Updated upstream
-from flask import Flask, request, jsonify, send_from_directory
-=======
 from flask import Flask, request, jsonify, send_from_directory, make_response
->>>>>>> Stashed changes
 from flask_cors import CORS
 
 # Add src directory to path for importing spreadsheet_loader
@@ -25,23 +21,14 @@ import spreadsheet_loader
 app = Flask(__name__)
 CORS(app)  # Enable CORS for development
 
-<<<<<<< Updated upstream
-=======
 # Disable caching for development
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
->>>>>>> Stashed changes
 # Get project root directory
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
 
 
-<<<<<<< Updated upstream
-@app.route('/')
-def index():
-    """Serve the main UI page."""
-    return send_from_directory(os.path.dirname(__file__), 'web_ui.html')
-=======
 @app.after_request
 def add_no_cache_headers(response):
     """Add no-cache headers to all responses during development."""
@@ -61,7 +48,6 @@ def index():
     response.headers['Pragma'] = 'no-cache'
     response.headers['Expires'] = '-1'
     return response
->>>>>>> Stashed changes
 
 
 @app.route('/api/excel-files', methods=['GET'])
@@ -77,21 +63,7 @@ def list_excel_files():
         return jsonify({'error': str(e)}), 500
 
 
-<<<<<<< Updated upstream
-@app.route('/api/bom-files', methods=['GET'])
-def list_bom_files():
-    """List all CSV files in the data directory that could be BOMs."""
-    try:
-        csv_files = [
-            f.name for f in DATA_DIR.glob('*.csv')
-            if f.is_file() and 'bom' in f.name.lower()
-        ]
-        return jsonify(sorted(csv_files))
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-=======
 # BOM files are regenerated automatically from Excel; endpoint removed
->>>>>>> Stashed changes
 
 
 @app.route('/api/graphdb-repositories', methods=['GET'])
@@ -106,10 +78,6 @@ def list_graphdb_repositories():
             data = json.loads(response.read().decode())
             repositories = []
 
-<<<<<<< Updated upstream
-            # GraphDB returns a list of repository objects
-            if isinstance(data, list):
-=======
             # GraphDB returns SPARQL query results format
             # Structure: { "results": { "bindings": [ {...}, {...} ] } }
             if isinstance(data, dict) and 'results' in data and 'bindings' in data['results']:
@@ -131,7 +99,6 @@ def list_graphdb_repositories():
                     })
             elif isinstance(data, list):
                 # Fallback: handle simple list format (in case API changes)
->>>>>>> Stashed changes
                 for repo in data:
                     repositories.append({
                         'id': repo.get('id', ''),
@@ -214,11 +181,8 @@ def run_import():
     """Execute the import process with the provided configuration."""
     try:
         config = request.json
-<<<<<<< Updated upstream
-=======
         if not config:
             return jsonify({'error': 'Invalid JSON data'}), 400
->>>>>>> Stashed changes
 
         # Validate required fields
         if not config.get('excelFile'):
@@ -228,9 +192,6 @@ def run_import():
 
         # Build file paths
         excel_path = str(DATA_DIR / config['excelFile'])
-<<<<<<< Updated upstream
-        bom_path = str(DATA_DIR / config['bomFile']) if config.get('bomFile') and config.get('reuseBom') else None
-=======
 
         # Always regenerate BOM files from the Excel workbook
         excel_stem = Path(config['excelFile']).stem
@@ -243,17 +204,12 @@ def run_import():
             config['bomByName'] = True
         except Exception as e:
             return jsonify({'error': f'Failed to regenerate BOM from Excel: {str(e)}'}), 500
->>>>>>> Stashed changes
 
         # Validate files exist
         if not os.path.exists(excel_path):
             return jsonify({'error': f'Excel file not found: {config["excelFile"]}'}), 404
         if bom_path and not os.path.exists(bom_path):
-<<<<<<< Updated upstream
-            return jsonify({'error': f'BOM file not found: {config["bomFile"]}'}), 404
-=======
             return jsonify({'error': f'BOM file not generated: {bom_path}'}), 500
->>>>>>> Stashed changes
 
         results = []
 
@@ -266,11 +222,7 @@ def run_import():
             if db_type == 'graphdb':
                 db_url = 'http://localhost:7200'
             elif db_type == 'neo4j':
-<<<<<<< Updated upstream
-                db_url = 'http://localhost:7474'
-=======
                 db_url = 'bolt://localhost:7687'  # Use bolt protocol for Neo4j
->>>>>>> Stashed changes
             else:
                 continue
 
@@ -293,8 +245,6 @@ def run_import():
             if config.get('batchSize'):
                 cmd.extend(['--batch-size', str(config['batchSize'])])
 
-<<<<<<< Updated upstream
-=======
             # Add log level
             if config.get('logLevel'):
                 cmd.extend(['--log-level', config['logLevel']])
@@ -305,7 +255,6 @@ def run_import():
             if config.get('neo4jPassword'):
                 cmd.extend(['--password', config['neo4jPassword']])
 
->>>>>>> Stashed changes
             # Add boolean flags
             if config.get('strictNames'):
                 cmd.append('--strict-names')
@@ -337,11 +286,7 @@ def run_import():
                 'repository': repository,
                 'success': result.returncode == 0,
                 'output': result.stdout,
-<<<<<<< Updated upstream
-                'error': result.stderr if result.returncode != 0 else None
-=======
                 'error': result.stderr
->>>>>>> Stashed changes
             }
             results.append(result_info)
 
