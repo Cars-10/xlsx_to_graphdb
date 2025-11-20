@@ -11,11 +11,14 @@ import argparse
 import logging
 from typing import Dict, List, Tuple, Optional, Set
 from collections import defaultdict
+from pathlib import Path
+import json
 
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
 
 
 def load_name_index(name_index_path: str) -> Dict[str, str]:
@@ -155,6 +158,38 @@ def build_subgraph(
     return G
 
 
+def build_subgraph_from_pairs(
+    edges: List[Tuple[str, str]],
+    root_part: str,
+    name_index: Dict[str, str],
+    max_depth: Optional[int] = None,
+    max_children: Optional[int] = None
+) -> nx.DiGraph:
+    G = nx.DiGraph()
+    children_map: Dict[str, List[str]] = defaultdict(list)
+    for parent, child in edges:
+        children_map[str(parent)].append(str(child))
+    visited: Set[str] = set()
+    queue: List[Tuple[str, int]] = [(root_part, 0)]
+    while queue:
+        part, depth = queue.pop(0)
+        if part in visited:
+            continue
+        visited.add(part)
+        label = name_index.get(part, part)
+        G.add_node(part, label=label, depth=depth)
+        if max_depth is not None and depth >= max_depth:
+            continue
+        children = children_map.get(part, [])
+        if max_children is not None:
+            children = children[:max_children]
+        for child in children:
+            G.add_edge(part, child)
+            queue.append((child, depth + 1))
+    logging.info(f"Built graph with {G.number_of_nodes()} nodes and {G.number_of_edges()} edges")
+    return G
+
+
 def visualize_graph(
     G: nx.DiGraph,
     root_part: str,
@@ -263,6 +298,51 @@ def visualize_graph(
         plt.show()
 
 
+def visualize_graph_3d(
+    G: nx.DiGraph,
+    root_part: str,
+    output_path: Optional[str] = None,
+    figsize: Tuple[int, int] = (20, 12),
+    show_labels: bool = True
+):
+    fig = plt.figure(figsize=figsize)
+    ax = fig.add_subplot(111, projection='3d')
+    pos = nx.spring_layout(G, k=2, iterations=50, seed=42, dim=3)
+    depths = nx.get_node_attributes(G, 'depth')
+    max_depth = max(depths.values()) if depths else 0
+    xs = [pos[n][0] for n in G.nodes()]
+    ys = [pos[n][1] for n in G.nodes()]
+    zs = [pos[n][2] for n in G.nodes()]
+    node_colors = [depths.get(n, 0) for n in G.nodes()]
+    ax.scatter(xs, ys, zs, c=node_colors, s=40, cmap=plt.cm.viridis, vmin=0, vmax=max(max_depth, 1))
+    for u, v in G.edges():
+        x = [pos[u][0], pos[v][0]]
+        y = [pos[u][1], pos[v][1]]
+        z = [pos[u][2], pos[v][2]]
+        ax.plot(x, y, z, color='#666666', linewidth=1, alpha=0.6)
+    if show_labels:
+        labels = nx.get_node_attributes(G, 'label')
+        for n, lbl in labels.items():
+            x, y, z = pos[n]
+            ax.text(x, y, z, lbl, fontsize=6, color='black')
+    root_label = G.nodes[root_part]['label'] if root_part in G.nodes else root_part
+    ax.set_title(
+        f'BOM 3D Graph for: {root_label} ({root_part})\n{G.number_of_nodes()} parts, {G.number_of_edges()} relationships, {max_depth} levels deep',
+        fontsize=14,
+        fontweight='bold'
+    )
+    sm = plt.cm.ScalarMappable(cmap=plt.cm.viridis, norm=plt.Normalize(vmin=0, vmax=max(max_depth, 1)))
+    sm.set_array([])
+    fig.colorbar(sm, ax=ax, shrink=0.5, pad=0.1, label='Depth Level')
+    ax.set_axis_off()
+    plt.tight_layout()
+    if output_path:
+        plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
+        logging.info(f"Saved 3D visualization to {output_path}")
+    else:
+        plt.show()
+
+
 def print_graph_stats(G: nx.DiGraph, root_part: str):
     """Print statistics about the graph."""
     print(f"\n{'='*60}")
@@ -346,6 +426,11 @@ Examples:
         help='Path to name index CSV file (default: name_index.csv)'
     )
     parser.add_argument(
+        '--transporter-dir',
+        default=None,
+        help='Path to transporter processed directory containing edges.json and parts.json'
+    )
+    parser.add_argument(
         '--output',
         default=None,
         help='Output path for visualization (default: display only)'
@@ -367,6 +452,11 @@ Examples:
         choices=['hierarchical', 'spring', 'circular'],
         default='hierarchical',
         help='Graph layout algorithm (default: hierarchical)'
+    )
+    parser.add_argument(
+        '--plot-3d',
+        action='store_true',
+        help='Render 3D visualization'
     )
     parser.add_argument(
         '--figsize',
@@ -400,22 +490,41 @@ Examples:
     )
 
     try:
-        # Load data
-        logging.info("Loading name index...")
-        name_index = load_name_index(args.name_index)
-
-        logging.info("Parsing BOM hierarchy...")
-        edges = parse_hierarchical_bom(args.bom)
-
-        # Build graph
-        logging.info(f"Building graph from root: {args.root}")
-        G = build_subgraph(
-            edges,
-            args.root,
-            name_index,
-            max_depth=args.max_depth,
-            max_children=args.max_children
-        )
+        use_transporter = bool(args.transporter_dir)
+        if use_transporter:
+            tp_dir = Path(args.transporter_dir)
+            edges_path = tp_dir / 'edges.json'
+            parts_path = tp_dir / 'parts.json'
+            if not edges_path.exists() or not parts_path.exists():
+                logging.error('Missing transporter processed files: edges.json or parts.json')
+                return 1
+            with open(parts_path, 'r') as f:
+                parts_obj = json.load(f)
+            name_index = {str(k): str(v.get('name') or k) for k, v in parts_obj.items()}
+            with open(edges_path, 'r') as f:
+                raw_edges = json.load(f)
+            edges_pairs: List[Tuple[str, str]] = [(str(a), str(b)) for a, b in raw_edges]
+            logging.info("Building graph from transporter data")
+            G = build_subgraph_from_pairs(
+                edges_pairs,
+                args.root,
+                name_index,
+                max_depth=args.max_depth,
+                max_children=args.max_children
+            )
+        else:
+            logging.info("Loading name index...")
+            name_index = load_name_index(args.name_index)
+            logging.info("Parsing BOM hierarchy...")
+            edges = parse_hierarchical_bom(args.bom)
+            logging.info(f"Building graph from root: {args.root}")
+            G = build_subgraph(
+                edges,
+                args.root,
+                name_index,
+                max_depth=args.max_depth,
+                max_children=args.max_children
+            )
 
         if G.number_of_nodes() == 0:
             logging.error(f"No nodes found starting from {args.root}. Check that the part number exists.")
@@ -427,14 +536,23 @@ Examples:
         # Visualize
         if not args.stats_only:
             logging.info("Creating visualization...")
-            visualize_graph(
-                G,
-                args.root,
-                output_path=args.output,
-                layout=args.layout,
-                figsize=tuple(args.figsize),
-                show_labels=not args.no_labels
-            )
+            if args.plot_3d:
+                visualize_graph_3d(
+                    G,
+                    args.root,
+                    output_path=args.output,
+                    figsize=tuple(args.figsize),
+                    show_labels=not args.no_labels
+                )
+            else:
+                visualize_graph(
+                    G,
+                    args.root,
+                    output_path=args.output,
+                    layout=args.layout,
+                    figsize=tuple(args.figsize),
+                    show_labels=not args.no_labels
+                )
 
         return 0
 

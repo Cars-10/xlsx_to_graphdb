@@ -238,21 +238,23 @@ fig.update_layout(
     showlegend=False,
     scene=dict(
         xaxis=dict(
-            title="Lifecycle State",
+            title=dict(text="\n\nLifecycle State", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(state_map.values()),
             ticktext=list(state_map.keys()),
             backgroundcolor="rgb(230, 230, 250)",
         ),
         yaxis=dict(
-            title="Object Type",
+            title=dict(text="\n\nObject Type", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(type_map.values()),
             ticktext=list(type_map.keys()),
             backgroundcolor="rgb(230, 250, 230)",
         ),
         zaxis=dict(
-            title="Time (Days from Revision A)",
+            title=dict(text="\n\nTime (Days from Revision A)", font=dict(size=22)),
             type='linear',
             backgroundcolor="rgb(250, 230, 230)",
         ),

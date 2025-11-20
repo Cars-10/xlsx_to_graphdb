@@ -18,7 +18,7 @@ PROP_DATE_PRIMARY = "created_at"
 PROP_DATE_FALLBACK1 = "create_date"
 PROP_DATE_FALLBACK2 = "updated_at"
 
-ROOT_NAME_FILTER = ""  # Empty to show all parts, or set to a specific part name
+ROOT_NAME_FILTER = "T00000001"
 Z_SOURCE = "first_change"
 
 # Optional jitter (helps when many nodes have the same state+type)
@@ -32,11 +32,11 @@ def fetch_data():
         # Simplified query to get all nodes (or filter by ROOT_NAME_FILTER if set)
         if ROOT_NAME_FILTER:
             node_query = f"""
-            MATCH (root:Part)
-            WHERE root.name CONTAINS $root_filter
+            MATCH (root:WTPart)
+            WHERE toString(root.number) = $root_filter OR root.name CONTAINS $root_filter OR toString(root.number) CONTAINS $root_filter
             WITH root LIMIT 1
-            MATCH (root)-[:HAS_COMPONENT*0..]->(p)
-            OPTIONAL MATCH (c:SnowmobileChange)-[:AFFECTS_PART]->(p)
+            MATCH (root)-[:HAS_COMPONENT*0..9]->(p)
+            OPTIONAL MATCH (c:Change)-[:AFFECTS_PART]->(p)
             WITH p, min(c.create_date) AS change_min, max(c.create_date) AS change_max
             OPTIONAL MATCH (p)<-[r]-()
             WITH p, change_min, change_max, min(r.created_at) AS rmin
@@ -52,10 +52,10 @@ def fetch_data():
               labels(p) AS labels,
               properties(p) AS all_properties
             UNION
-            MATCH (root:Part)
-            WHERE root.name CONTAINS $root_filter
+            MATCH (root:WTPart)
+            WHERE toString(root.number) = $root_filter OR root.name CONTAINS $root_filter OR toString(root.number) CONTAINS $root_filter
             WITH root LIMIT 1
-            MATCH (root)-[:HAS_COMPONENT*0..]->(p)
+            MATCH (root)-[:HAS_COMPONENT*0..9]->(p)
             MATCH (d:Document)-[:DESCRIBES]->(p)
             OPTIONAL MATCH (c:SnowmobileChange)-[:AFFECTS_PART]->(p)
             WITH d, min(c.create_date) AS change_min, max(c.create_date) AS change_max
@@ -78,7 +78,7 @@ def fetch_data():
             # Get all nodes when no filter is set
             node_query = f"""
             MATCH (n)
-            WHERE n:Part OR n:Document
+            WHERE n:WTPart OR n:Document
             WITH n LIMIT 500
             OPTIONAL MATCH (n)<-[r]-()
             WITH n, min(r.created_at) AS rmin
@@ -254,14 +254,65 @@ fig.add_trace(go.Scatter3d(
     z=df['z'],
     mode='markers',
     marker=dict(
-        size=20,  # Larger outline for better visibility
+        size=20,
         color='rgba(0,0,0,0)',
         opacity=1.0,
-        line=dict(width=2, color='rgba(0,0,0,0.4)')  # Dark visible outline
+        line=dict(width=2, color='rgba(0,0,0,0.4)')
     ),
     hoverinfo='skip',
     name='Node Rings'
 ))
+
+# Type-specific shape overlays
+df['is_document'] = df['labels'].apply(lambda ls: isinstance(ls, list) and ('Document' in ls))
+df['is_part'] = df['labels'].apply(lambda ls: isinstance(ls, list) and (('WTPart' in ls) or ('Part' in ls)))
+
+def _build_document_squares(dframe):
+    ex, ey, ez = [], [], []
+    size = 0.35
+    docs = dframe[dframe['is_document']]
+    for _, r in docs.iterrows():
+        x = float(r['x']); y = float(r['y']); z = float(r['z'])
+        ex += [x-size, x+size, x+size, x-size, x-size, None]
+        ey += [y-size, y-size, y+size, y+size, y-size, None]
+        ez += [z, z, z, z, z, None]
+    return ex, ey, ez
+
+def _build_part_cross(dframe):
+    ex, ey, ez = [], [], []
+    size = 0.25
+    parts = dframe[dframe['is_part']]
+    for _, r in parts.iterrows():
+        x = float(r['x']); y = float(r['y']); z = float(r['z'])
+        ex += [x-size, x+size, None, x, x, None]
+        ey += [y-size, y+size, None, y-size, y+size, None]
+        ez += [z, z, None, z, z, None]
+    return ex, ey, ez
+
+doc_sx, doc_sy, doc_sz = _build_document_squares(df)
+part_cx, part_cy, part_cz = _build_part_cross(df)
+
+if len(doc_sx) > 0:
+    fig.add_trace(go.Scatter3d(
+        x=doc_sx,
+        y=doc_sy,
+        z=doc_sz,
+        mode='lines',
+        line=dict(color='rgba(155,89,182,0.9)', width=3),
+        hoverinfo='skip',
+        name='Document Squares'
+    ))
+
+if len(part_cx) > 0:
+    fig.add_trace(go.Scatter3d(
+        x=part_cx,
+        y=part_cy,
+        z=part_cz,
+        mode='lines',
+        line=dict(color='rgba(46,204,113,0.85)', width=2),
+        hoverinfo='skip',
+        name='Part Cross'
+    ))
 
 # Axis layout with proper labels
 fig.update_layout(
@@ -269,21 +320,23 @@ fig.update_layout(
     showlegend=False,
     scene=dict(
         xaxis=dict(
-            title="Lifecycle State",
+            title=dict(text="\n\nLifecycle State", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(state_map.values()),
             ticktext=list(state_map.keys()),
             backgroundcolor="rgb(230, 230, 250)",
         ),
         yaxis=dict(
-            title="Type",
+            title=dict(text="\n\nType", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(type_map.values()),
             ticktext=list(type_map.keys()),
             backgroundcolor="rgb(230, 250, 230)",
         ),
         zaxis=dict(
-            title="Created Date",
+            title=dict(text="\n\nCreated Date", font=dict(size=22)),
             type='linear'
         ),
         aspectmode='manual',
@@ -311,7 +364,7 @@ fig.update_layout(
                     method='update',
                     args=[
                         {'z': [edge_z_fc, df['z_first_change'].tolist(), df['z_first_change'].tolist()]},
-                        {'scene': {'zaxis': {'title': 'Created Date (First Change)'}}}
+                        {'scene': {'zaxis': {'title': {'text': 'Created Date (First Change)'}}}}
                     ]
                 ),
                 dict(
@@ -319,7 +372,7 @@ fig.update_layout(
                     method='update',
                     args=[
                         {'z': [edge_z_lc, df['z_last_change'].tolist(), df['z_last_change'].tolist()]},
-                        {'scene': {'zaxis': {'title': 'Created Date (Last Change)'}}}
+                        {'scene': {'zaxis': {'title': {'text': 'Created Date (Last Change)'}}}}
                     ]
                 ),
                 dict(
@@ -327,7 +380,7 @@ fig.update_layout(
                     method='update',
                     args=[
                         {'z': [edge_z_rel, df['z_relationship'].tolist(), df['z_relationship'].tolist()]},
-                        {'scene': {'zaxis': {'title': 'Created Date (Relationship)'}}}
+                        {'scene': {'zaxis': {'title': {'text': 'Created Date (Relationship)'}}}}
                     ]
                 ),
                 dict(
@@ -335,7 +388,7 @@ fig.update_layout(
                     method='update',
                     args=[
                         {'z': [edge_z_node, df['z_node'].tolist(), df['z_node'].tolist()]},
-                        {'scene': {'zaxis': {'title': 'Created Date (Node)'}}}
+                        {'scene': {'zaxis': {'title': {'text': 'Created Date (Node)'}}}}
                     ]
                 ),
             ]

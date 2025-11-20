@@ -87,33 +87,56 @@ class EnhancedWindchillMCPClient:
             logger.error(f"Error calling tool {tool_name}: {e}")
             return None
     
+    def _call_first_available(self, tool_names: List[str], arguments: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        for t in tool_names:
+            res = self.call_tool(t, arguments)
+            if res:
+                return res
+        return None
+
     def search_parts(self, search_term: str, limit: int = 100) -> List[Dict[str, Any]]:
         """Search for parts in Windchill using proper MCP protocol."""
-        result = self.call_tool("part_search", {
+        result = self._call_first_available([
+            "partmgmt_search_parts",
+            "part_search",
+            "search_parts"
+        ], {
+            "query": search_term,
             "name": f"*{search_term}*",
             "limit": limit
         })
         if result:
-            parts = result.get('results', [])
+            parts = result.get('results', []) or result.get('value', [])
             logger.info(f"Found {len(parts)} parts for search term '{search_term}'")
             return parts
         return []
     
     def get_part_details(self, part_number: str) -> Optional[Dict[str, Any]]:
         """Get detailed information about a specific part."""
-        search_result = self.call_tool("part_search", {
+        search_result = self._call_first_available([
+            "partmgmt_search_parts",
+            "part_search",
+            "search_parts"
+        ], {
+            "query": part_number,
             "number": part_number,
             "limit": 1
         })
-        if search_result and search_result.get('results'):
+        items = []
+        if search_result:
+            items = search_result.get('results', []) or search_result.get('value', [])
+        if items:
             part_id = (
-                search_result['results'][0].get('id')
-                or search_result['results'][0].get('oid')
+                items[0].get('id')
+                or items[0].get('ID')
+                or items[0].get('oid')
             )
             if part_id:
-                result = self.call_tool("part_get", {
-                    "id": part_id
-                })
+                result = self._call_first_available([
+                    "partmgmt_get_part",
+                    "part_get",
+                    "get_part_details"
+                ], {"id": part_id, "partId": part_id})
                 if result:
                     logger.info(f"Retrieved details for part {part_number}")
                     return result
@@ -142,20 +165,36 @@ class EnhancedWindchillMCPClient:
     
     def get_bom_structure(self, part_number: str, depth: int = 3) -> Optional[Dict[str, Any]]:
         """Get BOM structure for a specific part."""
-        search_result = self.call_tool("part_search", {
+        search_result = self._call_first_available([
+            "partmgmt_search_parts",
+            "part_search",
+            "search_parts"
+        ], {
+            "query": part_number,
             "number": part_number,
             "limit": 1
         })
-        if search_result and search_result.get('results'):
+        items = []
+        if search_result:
+            items = search_result.get('results', []) or search_result.get('value', [])
+        if items:
             part_id = (
-                search_result['results'][0].get('id')
-                or search_result['results'][0].get('oid')
+                items[0].get('id')
+                or items[0].get('ID')
+                or items[0].get('oid')
             )
             if part_id:
-                result = self.call_tool("part_get_structure", {
+                result = self._call_first_available([
+                    "partmgmt_get_part_structure",
+                    "part_get_structure",
+                    "get_bom_structure"
+                ], {
                     "id": part_id,
+                    "partId": part_id,
                     "levels": depth,
+                    "depth": depth,
                     "expandPart": True,
+                    "viewName": "Design",
                     "selectFields": "Identity,Name,Number"
                 })
                 if result:
@@ -163,6 +202,35 @@ class EnhancedWindchillMCPClient:
                     return result
         logger.warning(f"Failed to get BOM structure for part {part_number}")
         return None
+
+    def get_bom_structure_by_id(self, part_id: str, depth: int = 3) -> Optional[Dict[str, Any]]:
+        result = self._call_first_available([
+            "partmgmt_get_part_structure",
+            "part_get_structure",
+            "get_bom_structure"
+        ], {
+            "id": part_id,
+            "partId": part_id,
+            "levels": depth,
+            "depth": depth,
+            "expandPart": True,
+            "viewName": "Design",
+            "selectFields": "Identity,Name,Number,Revision,State,View,Container,OrganizationName"
+        })
+        if result:
+            return result
+        return None
+
+    def search_documents(self, number: Optional[str] = None, name: Optional[str] = None, limit: int = 50) -> List[Dict[str, Any]]:
+        payload: Dict[str, Any] = {"limit": limit}
+        if number:
+            payload["number"] = number
+        if name:
+            payload["name"] = name
+        result = self._post_json("/api/tools/document_search", payload) or self._post_json("/tools/document_search", payload)
+        if not result:
+            return []
+        return result.get("value", []) or result.get("results", [])
     
     def get_all_change_objects(self, limit: int = 1000) -> List[Dict[str, Any]]:
         """Get all change objects from Windchill."""

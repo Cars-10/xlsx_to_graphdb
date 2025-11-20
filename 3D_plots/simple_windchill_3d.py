@@ -32,9 +32,6 @@ with driver.session() as session:
     query = """
     MATCH (n)
     WHERE n:Part OR n:WTPart OR n:PartVersion OR n:Document OR n:Change OR n:ChangeNotice OR n:ChangeRequest
-    WITH n, rand() AS random
-    ORDER BY random
-    LIMIT 1200
     RETURN
       elementId(n) AS node_id,
       labels(n) AS labels,
@@ -439,22 +436,36 @@ fig.update_layout(
     ),
     scene=dict(
         xaxis=dict(
-            title='Lifecycle State',
+            title=dict(text='\n\n\nLifecycle State', font=dict(size=22)),
+            tickfont=dict(size=14),
+            ticks='outside',
+            ticklen=10,
             tickmode='array',
             tickvals=list(range(len(states))),
             ticktext=states,
-            backgroundcolor='rgb(230, 235, 250)'
+            backgroundcolor='rgb(230, 235, 250)',
+            gridcolor='rgba(200,200,200,0.35)',
+            gridwidth=1
         ),
         yaxis=dict(
-            title='Object Type',
+            title=dict(text='\n\n\nObject Type', font=dict(size=22)),
+            tickfont=dict(size=14),
+            ticks='outside',
+            ticklen=10,
             tickmode='array',
             tickvals=list(range(len(types_short))),
             ticktext=types_short,
-            backgroundcolor='rgb(230, 250, 235)'
+            backgroundcolor='rgb(230, 250, 235)',
+            gridcolor='rgba(200,200,200,0.35)',
+            gridwidth=1
         ),
         zaxis=dict(
-            title='Days Since First Part',
+            title=dict(text='\n\n\nDays Since First Part', font=dict(size=22)),
             backgroundcolor='rgb(250, 235, 230)',
+            ticks='outside',
+            ticklen=10,
+            gridcolor='rgba(200,200,200,0.35)',
+            gridwidth=1,
             rangemode='tozero'  # Force z-axis to start at 0
         ),
         aspectmode='manual',
@@ -465,6 +476,7 @@ fig.update_layout(
     ),
     width=1500,
     height=1100,
+    margin=dict(l=80, r=80, b=80, t=100),
     showlegend=True,
     legend=dict(
         x=0.02,

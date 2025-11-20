@@ -113,6 +113,10 @@ type_order_short = sorted(df['object_type_short'].fillna('Unknown').unique())
 type_map = {val: idx for idx, val in enumerate(type_order_short)}
 df['y'] = df['object_type_short'].map(type_map)
 
+spaces = "\u00A0" * 8
+state_ticktext = [f"{s}{spaces}" for s in state_map.keys()]
+type_ticktext = [f"{t}{spaces}" for t in type_map.keys()]
+
 # Color by type
 TYPE_COLORS = {
     'MechPart': '#3498db',
@@ -217,21 +221,23 @@ fig.update_layout(
     showlegend=False,
     scene=dict(
         xaxis=dict(
-            title="Lifecycle State",
+            title=dict(text="\n\nLifecycle State", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(state_map.values()),
-            ticktext=list(state_map.keys()),
+            ticktext=state_ticktext,
             backgroundcolor="rgb(230, 235, 250)",
         ),
         yaxis=dict(
-            title="Object Type",
+            title=dict(text="\n\nObject Type", font=dict(size=22)),
+            tickfont=dict(size=14),
             tickmode='array',
             tickvals=list(type_map.values()),
-            ticktext=list(type_map.keys()),
+            ticktext=type_ticktext,
             backgroundcolor="rgb(230, 250, 235)",
         ),
         zaxis=dict(
-            title="Creation Date (Days Since Epoch)",
+            title=dict(text="\n\nCreation Date (Days Since Epoch)", font=dict(size=22)),
             type='linear',
             backgroundcolor="rgb(250, 235, 230)",
         ),
