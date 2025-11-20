@@ -23,7 +23,14 @@
       "Bash(if [ -d venv ])",
       "Bash(then source venv/bin/activate)",
       "Bash(else python3 src/web_server.py)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(else echo \"No venv found. Install dependencies with: pip install plotly pandas numpy neo4j\")",
+      "Bash(for endpoint in \"/tools/call\" \"/mcp/tools/call\" \"/api/tools/call\" \"/message\" \"/rpc\")",
+      "Bash(do echo \"Testing: $endpoint\")",
+      "Bash(done)",
+      "Bash(else echo \"No venv found\")",
+      "Bash(pip3 install plotly pandas numpy neo4j)",
+      "Bash(open:*)"
     ],
     "deny": [],
     "ask": []
